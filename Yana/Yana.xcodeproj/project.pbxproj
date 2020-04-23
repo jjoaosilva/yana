@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77DBAA7E2451DCBF009C7A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBAA7D2451DCBF009C7A6D /* AppDelegate.swift */; };
-		77DBAA802451DCBF009C7A6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBAA7F2451DCBF009C7A6D /* SceneDelegate.swift */; };
-		77DBAA822451DCBF009C7A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBAA812451DCBF009C7A6D /* ViewController.swift */; };
-		77DBAA852451DCBF009C7A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DBAA832451DCBF009C7A6D /* Main.storyboard */; };
-		77DBAA872451DCC0009C7A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DBAA862451DCC0009C7A6D /* Assets.xcassets */; };
-		77DBAA8A2451DCC0009C7A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DBAA882451DCC0009C7A6D /* LaunchScreen.storyboard */; };
+		FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5ACF245215B000809C2E /* AppDelegate.swift */; };
+		FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5AD1245215B000809C2E /* SceneDelegate.swift */; };
+		FEAE5AD4245215B000809C2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5AD3245215B000809C2E /* ViewController.swift */; };
+		FEAE5AD7245215B000809C2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5AD5245215B000809C2E /* Main.storyboard */; };
+		FEAE5AD9245215B300809C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5AD8245215B300809C2E /* Assets.xcassets */; };
+		FEAE5ADC245215B300809C2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5ADA245215B300809C2E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77DBAA7A2451DCBF009C7A6D /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		77DBAA7D2451DCBF009C7A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77DBAA7F2451DCBF009C7A6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77DBAA812451DCBF009C7A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77DBAA842451DCBF009C7A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		77DBAA862451DCC0009C7A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77DBAA892451DCC0009C7A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		77DBAA8B2451DCC0009C7A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEAE5ACC245215B000809C2E /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAE5ACF245215B000809C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEAE5AD1245215B000809C2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FEAE5AD3245215B000809C2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEAE5AD6245215B000809C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEAE5AD8245215B300809C2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEAE5ADB245215B300809C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEAE5ADD245215B300809C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		77DBAA772451DCBF009C7A6D /* Frameworks */ = {
+		FEAE5AC9245215B000809C2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		77DBAA712451DCBF009C7A6D = {
+		FEAE5AC3245215B000809C2E = {
 			isa = PBXGroup;
 			children = (
-				77DBAA7C2451DCBF009C7A6D /* Yana */,
-				77DBAA7B2451DCBF009C7A6D /* Products */,
+				FEAE5ACE245215B000809C2E /* Yana */,
+				FEAE5ACD245215B000809C2E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		77DBAA7B2451DCBF009C7A6D /* Products */ = {
+		FEAE5ACD245215B000809C2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77DBAA7A2451DCBF009C7A6D /* Yana.app */,
+				FEAE5ACC245215B000809C2E /* Yana.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		77DBAA7C2451DCBF009C7A6D /* Yana */ = {
+		FEAE5ACE245215B000809C2E /* Yana */ = {
 			isa = PBXGroup;
 			children = (
-				77DBAA7D2451DCBF009C7A6D /* AppDelegate.swift */,
-				77DBAA7F2451DCBF009C7A6D /* SceneDelegate.swift */,
-				77DBAA812451DCBF009C7A6D /* ViewController.swift */,
-				77DBAA832451DCBF009C7A6D /* Main.storyboard */,
-				77DBAA862451DCC0009C7A6D /* Assets.xcassets */,
-				77DBAA882451DCC0009C7A6D /* LaunchScreen.storyboard */,
-				77DBAA8B2451DCC0009C7A6D /* Info.plist */,
+				FEAE5ACF245215B000809C2E /* AppDelegate.swift */,
+				FEAE5AD1245215B000809C2E /* SceneDelegate.swift */,
+				FEAE5AD3245215B000809C2E /* ViewController.swift */,
+				FEAE5AD5245215B000809C2E /* Main.storyboard */,
+				FEAE5AD8245215B300809C2E /* Assets.xcassets */,
+				FEAE5ADA245215B300809C2E /* LaunchScreen.storyboard */,
+				FEAE5ADD245215B300809C2E /* Info.plist */,
 			);
 			path = Yana;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77DBAA792451DCBF009C7A6D /* Yana */ = {
+		FEAE5ACB245215B000809C2E /* Yana */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77DBAA8E2451DCC0009C7A6D /* Build configuration list for PBXNativeTarget "Yana" */;
+			buildConfigurationList = FEAE5AE0245215B300809C2E /* Build configuration list for PBXNativeTarget "Yana" */;
 			buildPhases = (
-				77DBAA762451DCBF009C7A6D /* Sources */,
-				77DBAA772451DCBF009C7A6D /* Frameworks */,
-				77DBAA782451DCBF009C7A6D /* Resources */,
+				FEAE5AC8245215B000809C2E /* Sources */,
+				FEAE5AC9245215B000809C2E /* Frameworks */,
+				FEAE5ACA245215B000809C2E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = Yana;
 			productName = Yana;
-			productReference = 77DBAA7A2451DCBF009C7A6D /* Yana.app */;
+			productReference = FEAE5ACC245215B000809C2E /* Yana.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		77DBAA722451DCBF009C7A6D /* Project object */ = {
+		FEAE5AC4245215B000809C2E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Ronaldo Gomes";
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Pedro Sousa";
 				TargetAttributes = {
-					77DBAA792451DCBF009C7A6D = {
-						CreatedOnToolsVersion = 11.3.1;
+					FEAE5ACB245215B000809C2E = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 77DBAA752451DCBF009C7A6D /* Build configuration list for PBXProject "Yana" */;
+			buildConfigurationList = FEAE5AC7245215B000809C2E /* Build configuration list for PBXProject "Yana" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 77DBAA712451DCBF009C7A6D;
-			productRefGroup = 77DBAA7B2451DCBF009C7A6D /* Products */;
+			mainGroup = FEAE5AC3245215B000809C2E;
+			productRefGroup = FEAE5ACD245215B000809C2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77DBAA792451DCBF009C7A6D /* Yana */,
+				FEAE5ACB245215B000809C2E /* Yana */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		77DBAA782451DCBF009C7A6D /* Resources */ = {
+		FEAE5ACA245215B000809C2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77DBAA8A2451DCC0009C7A6D /* LaunchScreen.storyboard in Resources */,
-				77DBAA872451DCC0009C7A6D /* Assets.xcassets in Resources */,
-				77DBAA852451DCBF009C7A6D /* Main.storyboard in Resources */,
+				FEAE5ADC245215B300809C2E /* LaunchScreen.storyboard in Resources */,
+				FEAE5AD9245215B300809C2E /* Assets.xcassets in Resources */,
+				FEAE5AD7245215B000809C2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		77DBAA762451DCBF009C7A6D /* Sources */ = {
+		FEAE5AC8245215B000809C2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77DBAA822451DCBF009C7A6D /* ViewController.swift in Sources */,
-				77DBAA7E2451DCBF009C7A6D /* AppDelegate.swift in Sources */,
-				77DBAA802451DCBF009C7A6D /* SceneDelegate.swift in Sources */,
+				FEAE5AD4245215B000809C2E /* ViewController.swift in Sources */,
+				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
+				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		77DBAA832451DCBF009C7A6D /* Main.storyboard */ = {
+		FEAE5AD5245215B000809C2E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77DBAA842451DCBF009C7A6D /* Base */,
+				FEAE5AD6245215B000809C2E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		77DBAA882451DCC0009C7A6D /* LaunchScreen.storyboard */ = {
+		FEAE5ADA245215B300809C2E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77DBAA892451DCC0009C7A6D /* Base */,
+				FEAE5ADB245215B300809C2E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		77DBAA8C2451DCC0009C7A6D /* Debug */ = {
+		FEAE5ADE245215B300809C2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		77DBAA8D2451DCC0009C7A6D /* Release */ = {
+		FEAE5ADF245215B300809C2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,35 +280,43 @@
 			};
 			name = Release;
 		};
-		77DBAA8F2451DCC0009C7A6D /* Debug */ = {
+		FEAE5AE1245215B300809C2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
 				INFOPLIST_FILE = Yana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mai.Yana;
+				PRODUCT_BUNDLE_IDENTIFIER = pedrosousa.Yana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		77DBAA902451DCC0009C7A6D /* Release */ = {
+		FEAE5AE2245215B300809C2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
 				INFOPLIST_FILE = Yana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mai.Yana;
+				PRODUCT_BUNDLE_IDENTIFIER = pedrosousa.Yana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		77DBAA752451DCBF009C7A6D /* Build configuration list for PBXProject "Yana" */ = {
+		FEAE5AC7245215B000809C2E /* Build configuration list for PBXProject "Yana" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77DBAA8C2451DCC0009C7A6D /* Debug */,
-				77DBAA8D2451DCC0009C7A6D /* Release */,
+				FEAE5ADE245215B300809C2E /* Debug */,
+				FEAE5ADF245215B300809C2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77DBAA8E2451DCC0009C7A6D /* Build configuration list for PBXNativeTarget "Yana" */ = {
+		FEAE5AE0245215B300809C2E /* Build configuration list for PBXNativeTarget "Yana" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77DBAA8F2451DCC0009C7A6D /* Debug */,
-				77DBAA902451DCC0009C7A6D /* Release */,
+				FEAE5AE1245215B300809C2E /* Debug */,
+				FEAE5AE2245215B300809C2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 77DBAA722451DCBF009C7A6D /* Project object */;
+	rootObject = FEAE5AC4245215B000809C2E /* Project object */;
 }

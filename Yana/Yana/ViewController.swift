@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Yana
 //
-//  Created by Ronaldo Gomes on 23/04/20.
-//  Copyright © 2020 Ronaldo Gomes. All rights reserved.
+//  Created by Pedro Sousa on 23/04/20.
+//  Copyright © 2020 Pedro Sousa. All rights reserved.
 //
 
 import UIKit
