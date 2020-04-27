@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BB2251C24575FB20026B831 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2251B24575FB20026B831 /* Colors.swift */; };
 		FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5ACF245215B000809C2E /* AppDelegate.swift */; };
 		FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5AD1245215B000809C2E /* SceneDelegate.swift */; };
 		FEAE5AD9245215B300809C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5AD8245215B300809C2E /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BB2251B24575FB20026B831 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FEAE5ACC245215B000809C2E /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAE5ACF245215B000809C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAE5AD1245215B000809C2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BB2251A24575F820026B831 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9BB2251B24575FB20026B831 /* Colors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FEAE5AC3245215B000809C2E = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		FEAE5AE324521F7800809C2E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9BB2251A24575F820026B831 /* Utils */,
 				FEAE5AE624521FB300809C2E /* TabBar.storyboard */,
 				FEAE5AE82452202800809C2E /* Feed.storyboard */,
 				FEAE5AEA2452203700809C2E /* MyPosts.storyboard */,
@@ -110,6 +121,7 @@
 				FEAE5AC8245215B000809C2E /* Sources */,
 				FEAE5AC9245215B000809C2E /* Frameworks */,
 				FEAE5ACA245215B000809C2E /* Resources */,
+				9BB2251D245764350026B831 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -170,12 +182,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BB2251D245764350026B831 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEAE5AC8245215B000809C2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
+				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
 				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
