@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B291A09245873C4008CA217 /* 1README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A08245873C4008CA217 /* 1README.md */; };
+		9B291A0B245873D1008CA217 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A0A245873D1008CA217 /* README.md */; };
 		9BB2251C24575FB20026B831 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2251B24575FB20026B831 /* Colors.swift */; };
 		FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5ACF245215B000809C2E /* AppDelegate.swift */; };
 		FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5AD1245215B000809C2E /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B291A08245873C4008CA217 /* 1README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 1README.md; sourceTree = "<group>"; };
+		9B291A0A245873D1008CA217 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9BB2251B24575FB20026B831 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FEAE5ACC245215B000809C2E /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAE5ACF245215B000809C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B291A062458737D008CA217 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B291A0A245873D1008CA217 /* README.md */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B291A0724587389008CA217 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B291A08245873C4008CA217 /* 1README.md */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9BB2251A24575F820026B831 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +92,8 @@
 		FEAE5ACE245215B000809C2E /* Yana */ = {
 			isa = PBXGroup;
 			children = (
-				FEAE5AE524521F9B00809C2E /* Model */,
-				FEAE5AE424521F9300809C2E /* Controller */,
+				9B291A0724587389008CA217 /* Controller */,
+				9B291A062458737D008CA217 /* Model */,
 				FEAE5AE324521F7800809C2E /* View */,
 				FEAE5ACF245215B000809C2E /* AppDelegate.swift */,
 				FEAE5AD1245215B000809C2E /* SceneDelegate.swift */,
@@ -95,20 +115,6 @@
 				FEAE5AEE24522D9600809C2E /* Tags.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FEAE5AE424521F9300809C2E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		FEAE5AE524521F9B00809C2E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +182,8 @@
 				FEAE5AEB2452203700809C2E /* MyPosts.storyboard in Resources */,
 				FEAE5AED2452205100809C2E /* Notifications.storyboard in Resources */,
 				FEAE5AE92452202800809C2E /* Feed.storyboard in Resources */,
+				9B291A0B245873D1008CA217 /* README.md in Resources */,
+				9B291A09245873C4008CA217 /* 1README.md in Resources */,
 				FEAE5AD9245215B300809C2E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
