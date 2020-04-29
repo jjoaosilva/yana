@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7756D040245877F700003FF1 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D03F245877F700003FF1 /* TagsViewController.swift */; };
+		7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D0412458791A00003FF1 /* MakePostViewController.swift */; };
+		77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EF7AD82458ACEB0088B44B /* MakePost.storyboard */; };
 		9B291A09245873C4008CA217 /* 1README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A08245873C4008CA217 /* 1README.md */; };
 		9B291A0B245873D1008CA217 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A0A245873D1008CA217 /* README.md */; };
 		9BB2251C24575FB20026B831 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2251B24575FB20026B831 /* Colors.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7756D03F245877F700003FF1 /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		7756D0412458791A00003FF1 /* MakePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePostViewController.swift; sourceTree = "<group>"; };
+		77EF7AD82458ACEB0088B44B /* MakePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakePost.storyboard; sourceTree = "<group>"; };
 		9B291A08245873C4008CA217 /* 1README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 1README.md; sourceTree = "<group>"; };
 		9B291A0A245873D1008CA217 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9BB2251B24575FB20026B831 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				9B291A08245873C4008CA217 /* 1README.md */,
+				7756D03F245877F700003FF1 /* TagsViewController.swift */,
+				7756D0412458791A00003FF1 /* MakePostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -113,6 +121,7 @@
 				FEAE5AEA2452203700809C2E /* MyPosts.storyboard */,
 				FEAE5AEC2452205100809C2E /* Notifications.storyboard */,
 				FEAE5AEE24522D9600809C2E /* Tags.storyboard */,
+				77EF7AD82458ACEB0088B44B /* MakePost.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 				FEAE5AE724521FB300809C2E /* TabBar.storyboard in Resources */,
 				FEAE5AEF24522D9600809C2E /* Tags.storyboard in Resources */,
 				FEAE5AEB2452203700809C2E /* MyPosts.storyboard in Resources */,
+				77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */,
 				FEAE5AED2452205100809C2E /* Notifications.storyboard in Resources */,
 				FEAE5AE92452202800809C2E /* Feed.storyboard in Resources */,
 				9B291A0B245873D1008CA217 /* README.md in Resources */,
@@ -216,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
+				7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */,
+				7756D040245877F700003FF1 /* TagsViewController.swift in Sources */,
 				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
 				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,
 			);
