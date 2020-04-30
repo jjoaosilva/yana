@@ -13,12 +13,14 @@ class MakePostViewController: UIViewController {
     @IBOutlet weak var doneButtonBar: UIBarButtonItem!
     @IBOutlet weak var imageUser: UIImageView!
     @IBOutlet weak var nameUser: UILabel!
-    @IBOutlet weak var postTitle: UITextField!
+    @IBOutlet weak var postTitle: FormTextField!
     @IBOutlet weak var plusCommunityButton: UIButton!
-    @IBOutlet weak var postContent: UITextView!
     @IBOutlet weak var plusMediaButton: UIButton!
     @IBOutlet weak var plusCommunityLabel: UILabel!
     @IBOutlet weak var plusMediaLabel: UILabel!
+    @IBOutlet weak var postContent: UITextView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,33 @@ class MakePostViewController: UIViewController {
         imageUser.layer.masksToBounds = true
         imageUser.layer.cornerRadius = imageUser.bounds.width / 2
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+
+
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        print("keyboardWillShow")
+        if [postContent .isFirstResponder][0]{
+            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                    if self.view.frame.origin.y == 0 {
+                        self.view.frame.origin.y -= keyboardSize.height
+                }
+            }
+        }
+    
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        print("keyboardWillHide")
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     @IBAction func cancelBarButton(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
@@ -50,8 +79,14 @@ class MakePostViewController: UIViewController {
         imageUser.tintColor = .primaryColor
         cancelButtonBar.tintColor = .primaryColor
         doneButtonBar.tintColor = .primaryColor
-    }
-    @IBAction func postTittle(_ sender: UITextField) {
-        view.endEditing(false)
+        postTitle.backgroundColor = .defaultWhite
+        postContent.backgroundColor = .defaultWhite
+        postTitle.borderColor = .primaryColor
+        postTitle.borderWidth = 1
+        postTitle.cornerRadius = 10
+        postContent.layer.borderColor = UIColor.primaryColor.cgColor
+        postContent.layer.borderWidth = 1
+        postContent.layer.cornerRadius = 10
+        
     }
 }
