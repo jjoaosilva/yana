@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
         view.backgroundColor = .secondaryColor
 
         logo.textColor = .primaryColor
+        logo.font = UIFont.bellotaLarge
 
         inputUser.textColor = .primaryColor
         inputUser.tintColor = .primaryColor
@@ -52,4 +53,6 @@ class LoginViewController: UIViewController {
         signUp.backgroundColor = .clear
         signUp.tintColor = .primaryColor
     }
+    
+    
 }
