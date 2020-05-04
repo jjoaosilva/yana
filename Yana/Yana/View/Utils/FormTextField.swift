@@ -67,4 +67,47 @@ import UIKit
             attributes: [NSAttributedString.Key.foregroundColor: placeholderColor])
         }
     }
+
+    // Right Image Settings
+    // Image Attribute
+    @IBInspectable var rightImage: UIImage? {
+        didSet {
+            self.clearButtonMode = .never
+            self.rightViewMode = .always
+
+            let size = self.bounds.height - 1
+
+            let view = UIButton(frame: .zero)
+            view.addTarget(
+                self,
+                action: #selector(self.clearTextField),
+                for: .touchUpInside
+            )
+
+            let imageView = UIImageView(image: rightImage)
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+
+            view.safeAreaLayoutGuide.widthAnchor.constraint(
+                equalToConstant: size
+            ).isActive = true
+            view.safeAreaLayoutGuide.heightAnchor.constraint(
+                equalToConstant: size
+            ).isActive = true
+
+            view.addSubview(imageView)
+            imageView.safeAreaLayoutGuide.centerXAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.centerXAnchor
+            ).isActive = true
+            imageView.safeAreaLayoutGuide.centerYAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.centerYAnchor
+            ).isActive = true
+
+            self.rightView = view
+        }
+    }
+    // Clear field function
+    @IBAction public func clearTextField() {
+        self.text = ""
+    }
+
 }
