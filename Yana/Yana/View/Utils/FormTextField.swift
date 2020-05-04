@@ -72,21 +72,9 @@ import UIKit
     // Image Attribute
     @IBInspectable var rightImage: UIImage? {
         didSet {
-            self.clearButtonMode = .never
-            self.rightViewMode = .always
-
             let size = self.bounds.height - 1
 
-            let view = UIButton(frame: .zero)
-            view.addTarget(
-                self,
-                action: #selector(self.clearTextField),
-                for: .touchUpInside
-            )
-
-            let imageView = UIImageView(image: rightImage)
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-
+            let view = UIButton(frame: CGRect(x: 0, y: 0, width: size, height: size))
             view.safeAreaLayoutGuide.widthAnchor.constraint(
                 equalToConstant: size
             ).isActive = true
@@ -94,19 +82,21 @@ import UIKit
                 equalToConstant: size
             ).isActive = true
 
-            view.addSubview(imageView)
-            imageView.safeAreaLayoutGuide.centerXAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.centerXAnchor
-            ).isActive = true
-            imageView.safeAreaLayoutGuide.centerYAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.centerYAnchor
-            ).isActive = true
+            view.setImage(rightImage, for: .normal)
 
+            self.clearButtonMode = .never
             self.rightView = view
+            self.rightViewMode = .always
+
+            view.addTarget(
+                self,
+                action: #selector(clearTextField),
+                for: .touchUpInside
+            )
         }
     }
     // Clear field function
-    @IBAction public func clearTextField() {
+    @objc public func clearTextField() {
         self.text = ""
     }
 
