@@ -9,6 +9,9 @@
 import UIKit
 
 class MakePostViewController: UIViewController {
+
+    // MARK: - Propeties
+
     @IBOutlet weak var cancelButtonBar: UIBarButtonItem!
     @IBOutlet weak var doneButtonBar: UIBarButtonItem!
     @IBOutlet weak var imageUser: UIImageView!
@@ -19,9 +22,9 @@ class MakePostViewController: UIViewController {
     @IBOutlet weak var plusCommunityLabel: UILabel!
     @IBOutlet weak var plusMediaLabel: UILabel!
     @IBOutlet weak var postContent: UITextView!
-    
-    
-    
+
+    // MARK: - Initializations
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if #available(iOS 13.0, *) {
@@ -30,63 +33,78 @@ class MakePostViewController: UIViewController {
         setupColors()
         imageUser.layer.masksToBounds = true
         imageUser.layer.cornerRadius = imageUser.bounds.width / 2
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
+        //On-screen keyboard configuration
+        NotificationCenter.default.addObserver(self,
+        selector: #selector(keyboardWillShow), name:
+        UIResponder.keyboardWillShowNotification, object: nil)
 
+        NotificationCenter.default.addObserver(self,
+        selector: #selector(keyboardWillHide), name:
+        UIResponder.keyboardWillHideNotification, object: nil)
     }
-    
+
+    // MARK: - Keyboard properties
+
     @objc func keyboardWillShow(notification: NSNotification) {
-        print("keyboardWillShow")
-        if [postContent .isFirstResponder][0]{
-            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        if [postContent .isFirstResponder][0] {
+            if let keyboardSize = (notification.userInfo?[
+                UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
                     if self.view.frame.origin.y == 0 {
                         self.view.frame.origin.y -= keyboardSize.height
                 }
             }
         }
-    
     }
 
     @objc func keyboardWillHide(notification: NSNotification) {
-        print("keyboardWillHide")
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
+
+    // MARK: - Actions
+
     @IBAction func cancelBarButton(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
+
     @IBAction func doneBarButton(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
-    /*
-        Ajusta as cores dos parametros da pagina, de acordo com as cores
-        escolhidas no colors.swift
-     */
+
+    // MARK: - Navigation
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+
+    // MARK: - Methods
+
+    // Adjusts the colors of the page parameters
     func setupColors() {
         view.backgroundColor = .defaultWhite
+
         nameUser.textColor = .primaryColor
+
         plusMediaLabel.textColor = .primaryColor
+        plusMediaButton.tintColor = .primaryColor
         plusCommunityLabel.textColor = .primaryColor
         plusCommunityButton.tintColor = .primaryColor
-        plusMediaButton.tintColor = .primaryColor
+
         imageUser.tintColor = .primaryColor
+
         cancelButtonBar.tintColor = .primaryColor
         doneButtonBar.tintColor = .primaryColor
+
         postTitle.backgroundColor = .defaultWhite
-        postContent.backgroundColor = .defaultWhite
         postTitle.borderColor = .primaryColor
         postTitle.borderWidth = 1
         postTitle.cornerRadius = 10
+
+        postContent.backgroundColor = .defaultWhite
         postContent.layer.borderColor = UIColor.primaryColor.cgColor
         postContent.layer.borderWidth = 1
         postContent.layer.cornerRadius = 10
-        
     }
 }
