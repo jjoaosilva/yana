@@ -12,6 +12,12 @@
 		77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EF7AD82458ACEB0088B44B /* MakePost.storyboard */; };
 		9B291A0B245873D1008CA217 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A0A245873D1008CA217 /* README.md */; };
 		9BB2251C24575FB20026B831 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2251B24575FB20026B831 /* Colors.swift */; };
+		E2A5DB8A245B16160072BE09 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB89245B16160072BE09 /* Onboarding.storyboard */; };
+		E2A5DB93245B47850072BE09 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */; };
+		E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */; };
+		E2A5DB98245B4B110072BE09 /* PresentationContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB97245B4B110072BE09 /* PresentationContent.swift */; };
+		E2A5DB9A245B62E30072BE09 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */; };
+		E2A5DB9C245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */; };
 		FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */; };
 		FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA812162459CBC700329C3B /* LogInViewController.swift */; };
 		FEA8121A2459E12F00329C3B /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA812192459E12F00329C3B /* SignUp.storyboard */; };
@@ -36,6 +42,12 @@
 		77EF7AD82458ACEB0088B44B /* MakePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakePost.storyboard; sourceTree = "<group>"; };
 		9B291A0A245873D1008CA217 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9BB2251B24575FB20026B831 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E2A5DB89245B16160072BE09 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
+		E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		E2A5DB97245B4B110072BE09 /* PresentationContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContent.swift; sourceTree = "<group>"; };
+		E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
 		FEA812162459CBC700329C3B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FEA812192459E12F00329C3B /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		FEAE5ACC245215B000809C2E /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,9 +79,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		776708B524603FB8001BB9F9 /* Make Post */ = {
+			isa = PBXGroup;
+			children = (
+				77EF7AD82458ACEB0088B44B /* MakePost.storyboard */,
+			);
+			path = "Make Post";
+			sourceTree = "<group>";
+		};
 		9B291A062458737D008CA217 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2A5DB96245B4AC50072BE09 /* OnboardingModel */,
 				9B291A0A245873D1008CA217 /* README.md */,
 			);
 			path = Model;
@@ -78,6 +99,7 @@
 		9B291A0724587389008CA217 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E2A5DB8D245B43E00072BE09 /* OnboardingControllers */,
 				7756D03F245877F700003FF1 /* TagsViewController.swift */,
 				7756D0412458791A00003FF1 /* MakePostViewController.swift */,
 				FEA812162459CBC700329C3B /* LogInViewController.swift */,
@@ -91,9 +113,36 @@
 				FED467772458BE350016AE68 /* FormTextField.swift */,
 				FED467792458C8A30016AE68 /* FormButton.swift */,
 				9BB2251B24575FB20026B831 /* Colors.swift */,
+				E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */,
 				FED6C637245B12E8007F21C0 /* Fonts.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2A5DB88245B16010072BE09 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB89245B16160072BE09 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E2A5DB8D245B43E00072BE09 /* OnboardingControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */,
+				E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */,
+				E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */,
+			);
+			path = OnboardingControllers;
+			sourceTree = "<group>";
+		};
+		E2A5DB96245B4AC50072BE09 /* OnboardingModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB97245B4B110072BE09 /* PresentationContent.swift */,
+			);
+			path = OnboardingModel;
 			sourceTree = "<group>";
 		};
 		FEA812182459E06100329C3B /* SignUp */ = {
@@ -138,6 +187,8 @@
 		FEAE5AE324521F7800809C2E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2A5DB88245B16010072BE09 /* Onboarding */,
+				776708B524603FB8001BB9F9 /* Make Post */,
 				FEA812182459E06100329C3B /* SignUp */,
 				FED4674E245896E50016AE68 /* Login */,
 				9BB2251A24575F820026B831 /* Utils */,
@@ -147,7 +198,6 @@
 				FEAE5AEA2452203700809C2E /* MyPosts.storyboard */,
 				FEAE5AEC2452205100809C2E /* Notifications.storyboard */,
 				FEAE5AEE24522D9600809C2E /* Tags.storyboard */,
-				77EF7AD82458ACEB0088B44B /* MakePost.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +280,7 @@
 				FEAE5ADC245215B300809C2E /* LaunchScreen.storyboard in Resources */,
 				FEAE5AE724521FB300809C2E /* TabBar.storyboard in Resources */,
 				FEAE5AEF24522D9600809C2E /* Tags.storyboard in Resources */,
+				E2A5DB8A245B16160072BE09 /* Onboarding.storyboard in Resources */,
 				FEA8121A2459E12F00329C3B /* SignUp.storyboard in Resources */,
 				FEAE5AEB2452203700809C2E /* MyPosts.storyboard in Resources */,
 				77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */,
@@ -272,10 +323,15 @@
 				FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */,
 				FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */,
 				FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */,
+				E2A5DB9C245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift in Sources */,
+				E2A5DB93245B47850072BE09 /* OnboardingContentViewController.swift in Sources */,
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
+				E2A5DB98245B4B110072BE09 /* PresentationContent.swift in Sources */,
+				E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */,
 				7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */,
 				7756D040245877F700003FF1 /* TagsViewController.swift in Sources */,
 				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
+				E2A5DB9A245B62E30072BE09 /* OnboardingViewController.swift in Sources */,
 				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,
 				FED467782458BE350016AE68 /* FormTextField.swift in Sources */,
 			);

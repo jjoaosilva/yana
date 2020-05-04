@@ -53,6 +53,4 @@ class LoginViewController: UIViewController {
         signUp.backgroundColor = .clear
         signUp.tintColor = .primaryColor
     }
-    
-    
 }
