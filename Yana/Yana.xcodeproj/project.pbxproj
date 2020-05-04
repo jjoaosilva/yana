@@ -65,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		776708B524603FB8001BB9F9 /* Make Post */ = {
+			isa = PBXGroup;
+			children = (
+				77EF7AD82458ACEB0088B44B /* MakePost.storyboard */,
+			);
+			path = "Make Post";
+			sourceTree = "<group>";
+		};
 		9B291A062458737D008CA217 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +143,7 @@
 		FEAE5AE324521F7800809C2E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				776708B524603FB8001BB9F9 /* Make Post */,
 				FEA812182459E06100329C3B /* SignUp */,
 				FED4674E245896E50016AE68 /* Login */,
 				9BB2251A24575F820026B831 /* Utils */,
@@ -144,7 +153,6 @@
 				FEAE5AEA2452203700809C2E /* MyPosts.storyboard */,
 				FEAE5AEC2452205100809C2E /* Notifications.storyboard */,
 				FEAE5AEE24522D9600809C2E /* Tags.storyboard */,
-				77EF7AD82458ACEB0088B44B /* MakePost.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

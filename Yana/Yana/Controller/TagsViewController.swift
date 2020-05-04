@@ -28,8 +28,7 @@ class TagsViewController: UIViewController {
         
         let destination = segue.destination as? UINavigationController
         let controller =  destination!.topViewController! as? MakePostViewController
-        
-        
+
     }
-    
+
 }
