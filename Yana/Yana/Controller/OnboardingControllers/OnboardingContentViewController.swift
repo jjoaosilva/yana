@@ -29,6 +29,8 @@ class OnboardingContentViewController: UIViewController {
 
     func configLabels() {
         contentTitle.textColor = .defaultBlack
+        contentTitle.font = UIFont.bellotaTitle
         contentDescription.textColor = .defaultBlack
+        contentDescription.font = UIFont.bellotaTag
     }
 }

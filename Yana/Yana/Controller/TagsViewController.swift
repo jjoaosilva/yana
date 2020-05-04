@@ -11,13 +11,12 @@ import UIKit
 class TagsViewController: UIViewController {
 
     @IBOutlet weak var modalButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction func modalButton(_ sender: UIButton) {
-        
         self.performSegue(withIdentifier: "makePost", sender: nil)
     }
 
