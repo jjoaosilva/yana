@@ -27,6 +27,7 @@
 		FED46750245896FD0016AE68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED4674F245896FD0016AE68 /* Login.storyboard */; };
 		FED467782458BE350016AE68 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED467772458BE350016AE68 /* FormTextField.swift */; };
 		FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED467792458C8A30016AE68 /* FormButton.swift */; };
+		FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6C637245B12E8007F21C0 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		FED467772458BE350016AE68 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		FED467792458C8A30016AE68 /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
 		FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bellota-Bold.ttf"; sourceTree = "<group>"; };
+		FED6C637245B12E8007F21C0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				FED467772458BE350016AE68 /* FormTextField.swift */,
 				FED467792458C8A30016AE68 /* FormButton.swift */,
 				9BB2251B24575FB20026B831 /* Colors.swift */,
+				FED6C637245B12E8007F21C0 /* Fonts.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */,
 				FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */,
 				FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */,
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
