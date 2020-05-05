@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewPostCellTable" customModule="Yana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YOs-no-9TB">
+                    <rect key="frame" x="20" y="10" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.89494431019999998" green="0.39065405730000002" blue="0.20865741369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ly3-Bm-lcO"/>
+                        <constraint firstAttribute="width" constant="30" id="vZi-Zk-2jq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSl-Zl-6L2">
+                    <rect key="frame" x="60" y="16.5" width="110" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44T-oh-ege">
+                    <rect key="frame" x="60" y="43.5" width="334" height="26.5"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed aliquam diam, id porttitor tortor. Integer eu arcu non tortor…</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwZ-YN-71L">
+                    <rect key="frame" x="369" y="13" width="25" height="24"/>
+                    <state key="normal" image="ellipsis.circle.fill" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="44T-oh-ege" firstAttribute="top" secondItem="xSl-Zl-6L2" secondAttribute="bottom" constant="10" id="48f-hI-7Ya"/>
+                <constraint firstItem="xSl-Zl-6L2" firstAttribute="leading" secondItem="YOs-no-9TB" secondAttribute="trailing" constant="10" id="4iy-ne-cMn"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="44T-oh-ege" secondAttribute="bottom" constant="20" id="6WZ-Vf-EWT"/>
+                <constraint firstItem="44T-oh-ege" firstAttribute="leading" secondItem="xSl-Zl-6L2" secondAttribute="leading" id="6xn-uK-RXX"/>
+                <constraint firstItem="xSl-Zl-6L2" firstAttribute="centerY" secondItem="YOs-no-9TB" secondAttribute="centerY" id="End-dZ-nhQ"/>
+                <constraint firstItem="YOs-no-9TB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="kNx-sr-ppy"/>
+                <constraint firstAttribute="trailing" secondItem="44T-oh-ege" secondAttribute="trailing" constant="20" id="leL-cC-BaN"/>
+                <constraint firstAttribute="trailing" secondItem="WwZ-YN-71L" secondAttribute="trailing" constant="20" id="oX1-ir-SDg"/>
+                <constraint firstItem="YOs-no-9TB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="q18-Vd-tqC"/>
+                <constraint firstItem="WwZ-YN-71L" firstAttribute="centerY" secondItem="xSl-Zl-6L2" secondAttribute="centerY" id="vUq-0P-VPT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="manageComment" destination="WwZ-YN-71L" id="6FA-NJ-Aaf"/>
+                <outlet property="userComment" destination="44T-oh-ege" id="F0K-1T-3tE"/>
+                <outlet property="userImage" destination="YOs-no-9TB" id="grG-UC-gQu"/>
+                <outlet property="userName" destination="xSl-Zl-6L2" id="nrt-0q-phx"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ellipsis.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
