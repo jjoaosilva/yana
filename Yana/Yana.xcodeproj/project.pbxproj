@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B291A09245873C4008CA217 /* 1README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A08245873C4008CA217 /* 1README.md */; };
+		7756D040245877F700003FF1 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D03F245877F700003FF1 /* TagsViewController.swift */; };
+		7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D0412458791A00003FF1 /* MakePostViewController.swift */; };
+		77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EF7AD82458ACEB0088B44B /* MakePost.storyboard */; };
 		9B291A0B245873D1008CA217 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A0A245873D1008CA217 /* README.md */; };
 		9B6CAE6C245B155500C34393 /* ViewPostCellTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6CAE6B245B155500C34393 /* ViewPostCellTable.xib */; };
 		9B6CAE6E245B1ABC00C34393 /* ViewPostCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6CAE6D245B1ABC00C34393 /* ViewPostCellTable.swift */; };
@@ -16,6 +18,15 @@
 		9B6E8B3A245A27B6001E3591 /* ViewPostHeaderTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E8B39245A27B6001E3591 /* ViewPostHeaderTable.swift */; };
 		9B6E8B3C245A30EC001E3591 /* ViewPostTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E8B3B245A30EC001E3591 /* ViewPostTable.swift */; };
 		9BB2251C24575FB20026B831 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2251B24575FB20026B831 /* Colors.swift */; };
+		E2A5DB8A245B16160072BE09 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB89245B16160072BE09 /* Onboarding.storyboard */; };
+		E2A5DB93245B47850072BE09 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */; };
+		E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */; };
+		E2A5DB98245B4B110072BE09 /* PresentationContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB97245B4B110072BE09 /* PresentationContent.swift */; };
+		E2A5DB9A245B62E30072BE09 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */; };
+		E2A5DB9C245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */; };
+		FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */; };
+		FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA812162459CBC700329C3B /* LogInViewController.swift */; };
+		FEA8121A2459E12F00329C3B /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA812192459E12F00329C3B /* SignUp.storyboard */; };
 		FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5ACF245215B000809C2E /* AppDelegate.swift */; };
 		FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE5AD1245215B000809C2E /* SceneDelegate.swift */; };
 		FEAE5AD9245215B300809C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5AD8245215B300809C2E /* Assets.xcassets */; };
@@ -25,10 +36,16 @@
 		FEAE5AEB2452203700809C2E /* MyPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5AEA2452203700809C2E /* MyPosts.storyboard */; };
 		FEAE5AED2452205100809C2E /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5AEC2452205100809C2E /* Notifications.storyboard */; };
 		FEAE5AEF24522D9600809C2E /* Tags.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAE5AEE24522D9600809C2E /* Tags.storyboard */; };
+		FED46750245896FD0016AE68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED4674F245896FD0016AE68 /* Login.storyboard */; };
+		FED467782458BE350016AE68 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED467772458BE350016AE68 /* FormTextField.swift */; };
+		FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED467792458C8A30016AE68 /* FormButton.swift */; };
+		FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6C637245B12E8007F21C0 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B291A08245873C4008CA217 /* 1README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 1README.md; sourceTree = "<group>"; };
+		7756D03F245877F700003FF1 /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		7756D0412458791A00003FF1 /* MakePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePostViewController.swift; sourceTree = "<group>"; };
+		77EF7AD82458ACEB0088B44B /* MakePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakePost.storyboard; sourceTree = "<group>"; };
 		9B291A0A245873D1008CA217 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9B6CAE6B245B155500C34393 /* ViewPostCellTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewPostCellTable.xib; sourceTree = "<group>"; };
 		9B6CAE6D245B1ABC00C34393 /* ViewPostCellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostCellTable.swift; sourceTree = "<group>"; };
@@ -37,6 +54,14 @@
 		9B6E8B39245A27B6001E3591 /* ViewPostHeaderTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostHeaderTable.swift; sourceTree = "<group>"; };
 		9B6E8B3B245A30EC001E3591 /* ViewPostTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostTable.swift; sourceTree = "<group>"; };
 		9BB2251B24575FB20026B831 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E2A5DB89245B16160072BE09 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
+		E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		E2A5DB97245B4B110072BE09 /* PresentationContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContent.swift; sourceTree = "<group>"; };
+		E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
+		FEA812162459CBC700329C3B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FEA812192459E12F00329C3B /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		FEAE5ACC245215B000809C2E /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAE5ACF245215B000809C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAE5AD1245215B000809C2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +73,11 @@
 		FEAE5AEA2452203700809C2E /* MyPosts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPosts.storyboard; sourceTree = "<group>"; };
 		FEAE5AEC2452205100809C2E /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		FEAE5AEE24522D9600809C2E /* Tags.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tags.storyboard; sourceTree = "<group>"; };
+		FED4674F245896FD0016AE68 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		FED467772458BE350016AE68 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		FED467792458C8A30016AE68 /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
+		FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bellota-Bold.ttf"; sourceTree = "<group>"; };
+		FED6C637245B12E8007F21C0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +91,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		776708B524603FB8001BB9F9 /* Make Post */ = {
+			isa = PBXGroup;
+			children = (
+				77EF7AD82458ACEB0088B44B /* MakePost.storyboard */,
+			);
+			path = "Make Post";
+			sourceTree = "<group>";
+		};
 		9B291A062458737D008CA217 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2A5DB96245B4AC50072BE09 /* OnboardingModel */,
 				9B291A0A245873D1008CA217 /* README.md */,
 			);
 			path = Model;
@@ -72,20 +111,79 @@
 		9B291A0724587389008CA217 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9B291A08245873C4008CA217 /* 1README.md */,
+				9B6ED15B24621CA0001E084B /* PostControllers */,
+				E2A5DB8D245B43E00072BE09 /* OnboardingControllers */,
+				7756D03F245877F700003FF1 /* TagsViewController.swift */,
+				7756D0412458791A00003FF1 /* MakePostViewController.swift */,
+				FEA812162459CBC700329C3B /* LogInViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B6ED15A24621C02001E084B /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				9B6E8B352459C616001E3591 /* ViewPost.storyboard */,
+				9B6E8B372459C7D3001E3591 /* ViewPostHeaderTable.xib */,
+				9B6CAE6B245B155500C34393 /* ViewPostCellTable.xib */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		9B6ED15B24621CA0001E084B /* PostControllers */ = {
+			isa = PBXGroup;
+			children = (
 				9B6E8B39245A27B6001E3591 /* ViewPostHeaderTable.swift */,
 				9B6E8B3B245A30EC001E3591 /* ViewPostTable.swift */,
 				9B6CAE6D245B1ABC00C34393 /* ViewPostCellTable.swift */,
 			);
-			path = Controller;
+			path = PostControllers;
 			sourceTree = "<group>";
 		};
 		9BB2251A24575F820026B831 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FED467772458BE350016AE68 /* FormTextField.swift */,
+				FED467792458C8A30016AE68 /* FormButton.swift */,
 				9BB2251B24575FB20026B831 /* Colors.swift */,
+				E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */,
+				FED6C637245B12E8007F21C0 /* Fonts.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2A5DB88245B16010072BE09 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB89245B16160072BE09 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E2A5DB8D245B43E00072BE09 /* OnboardingControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */,
+				E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */,
+				E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */,
+			);
+			path = OnboardingControllers;
+			sourceTree = "<group>";
+		};
+		E2A5DB96245B4AC50072BE09 /* OnboardingModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DB97245B4B110072BE09 /* PresentationContent.swift */,
+			);
+			path = OnboardingModel;
+			sourceTree = "<group>";
+		};
+		FEA812182459E06100329C3B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FEA812192459E12F00329C3B /* SignUp.storyboard */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		FEAE5AC3245215B000809C2E = {
@@ -122,17 +220,36 @@
 		FEAE5AE324521F7800809C2E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B6ED15A24621C02001E084B /* Post */,
+				E2A5DB88245B16010072BE09 /* Onboarding */,
+				776708B524603FB8001BB9F9 /* Make Post */,
+				FEA812182459E06100329C3B /* SignUp */,
+				FED4674E245896E50016AE68 /* Login */,
 				9BB2251A24575F820026B831 /* Utils */,
+				FED4677B24599EF20016AE68 /* Fonts */,
 				FEAE5AE624521FB300809C2E /* TabBar.storyboard */,
 				FEAE5AE82452202800809C2E /* Feed.storyboard */,
 				FEAE5AEA2452203700809C2E /* MyPosts.storyboard */,
 				FEAE5AEC2452205100809C2E /* Notifications.storyboard */,
 				FEAE5AEE24522D9600809C2E /* Tags.storyboard */,
-				9B6E8B352459C616001E3591 /* ViewPost.storyboard */,
-				9B6E8B372459C7D3001E3591 /* ViewPostHeaderTable.xib */,
-				9B6CAE6B245B155500C34393 /* ViewPostCellTable.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FED4674E245896E50016AE68 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FED4674F245896FD0016AE68 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FED4677B24599EF20016AE68 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,12 +315,16 @@
 				FEAE5AE724521FB300809C2E /* TabBar.storyboard in Resources */,
 				FEAE5AEF24522D9600809C2E /* Tags.storyboard in Resources */,
 				9B6E8B362459C616001E3591 /* ViewPost.storyboard in Resources */,
+				E2A5DB8A245B16160072BE09 /* Onboarding.storyboard in Resources */,
+				FEA8121A2459E12F00329C3B /* SignUp.storyboard in Resources */,
 				FEAE5AEB2452203700809C2E /* MyPosts.storyboard in Resources */,
+				77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */,
 				FEAE5AED2452205100809C2E /* Notifications.storyboard in Resources */,
+				FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */,
 				FEAE5AE92452202800809C2E /* Feed.storyboard in Resources */,
 				9B6CAE6C245B155500C34393 /* ViewPostCellTable.xib in Resources */,
 				9B291A0B245873D1008CA217 /* README.md in Resources */,
-				9B291A09245873C4008CA217 /* 1README.md in Resources */,
+				FED46750245896FD0016AE68 /* Login.storyboard in Resources */,
 				FEAE5AD9245215B300809C2E /* Assets.xcassets in Resources */,
 				9B6E8B382459C7D3001E3591 /* ViewPostHeaderTable.xib in Resources */,
 			);
@@ -236,12 +357,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */,
+				FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */,
+				FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */,
+				E2A5DB9C245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift in Sources */,
+				E2A5DB93245B47850072BE09 /* OnboardingContentViewController.swift in Sources */,
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
 				9B6CAE6E245B1ABC00C34393 /* ViewPostCellTable.swift in Sources */,
-				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
 				9B6E8B3A245A27B6001E3591 /* ViewPostHeaderTable.swift in Sources */,
 				9B6E8B3C245A30EC001E3591 /* ViewPostTable.swift in Sources */,
+				E2A5DB98245B4B110072BE09 /* PresentationContent.swift in Sources */,
+				E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */,
+				7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */,
+				7756D040245877F700003FF1 /* TagsViewController.swift in Sources */,
+				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
+				E2A5DB9A245B62E30072BE09 /* OnboardingViewController.swift in Sources */,
 				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,
+				FED467782458BE350016AE68 /* FormTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
