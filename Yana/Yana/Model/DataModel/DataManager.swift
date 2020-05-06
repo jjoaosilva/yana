@@ -98,7 +98,7 @@ class DataManager {
 
     // retorna a instancia do usuário a partir do seu ID
     func getAuthorOfPost(userIdentifier: Int) -> Person {
-        let fileUrl = Bundle.main.url(forResource: "", withExtension: "json")!
+        let fileUrl = Bundle.main.url(forResource: "Users", withExtension: "json")!
         let jsonData = try? Data(contentsOf: fileUrl)
         var users = [Person]()
         do {
