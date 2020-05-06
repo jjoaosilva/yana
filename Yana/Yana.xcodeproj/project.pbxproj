@@ -12,6 +12,15 @@
 		77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EF7AD82458ACEB0088B44B /* MakePost.storyboard */; };
 		9B291A0B245873D1008CA217 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A0A245873D1008CA217 /* README.md */; };
 		9BB2251C24575FB20026B831 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2251B24575FB20026B831 /* Colors.swift */; };
+		E240CA6F2460D85D0055DA1A /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240CA6E2460D85D0055DA1A /* Community.swift */; };
+		E240CA712460D95E0055DA1A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240CA702460D95E0055DA1A /* Post.swift */; };
+		E240CA732460DA200055DA1A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240CA722460DA200055DA1A /* Person.swift */; };
+		E240CA752460DB410055DA1A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240CA742460DB410055DA1A /* Comment.swift */; };
+		E240CA7724618FD10055DA1A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240CA7624618FD10055DA1A /* DataManager.swift */; };
+		E240CA792461AD9F0055DA1A /* PostPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240CA782461AD9F0055DA1A /* PostPackage.swift */; };
+		E240CA802462E34A0055DA1A /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = E240CA7D2462E34A0055DA1A /* Users.json */; };
+		E240CA812462E34A0055DA1A /* Posts.json in Resources */ = {isa = PBXBuildFile; fileRef = E240CA7E2462E34A0055DA1A /* Posts.json */; };
+		E240CA822462E34A0055DA1A /* Community.json in Resources */ = {isa = PBXBuildFile; fileRef = E240CA7F2462E34A0055DA1A /* Community.json */; };
 		E2A5DB8A245B16160072BE09 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A5DB89245B16160072BE09 /* Onboarding.storyboard */; };
 		E2A5DB93245B47850072BE09 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */; };
 		E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */; };
@@ -42,6 +51,15 @@
 		77EF7AD82458ACEB0088B44B /* MakePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakePost.storyboard; sourceTree = "<group>"; };
 		9B291A0A245873D1008CA217 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9BB2251B24575FB20026B831 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E240CA6E2460D85D0055DA1A /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		E240CA702460D95E0055DA1A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E240CA722460DA200055DA1A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E240CA742460DB410055DA1A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E240CA7624618FD10055DA1A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E240CA782461AD9F0055DA1A /* PostPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPackage.swift; sourceTree = "<group>"; };
+		E240CA7D2462E34A0055DA1A /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Users.json; path = ../../../../../Users.json; sourceTree = "<group>"; };
+		E240CA7E2462E34A0055DA1A /* Posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Posts.json; path = ../../../../../Posts.json; sourceTree = "<group>"; };
+		E240CA7F2462E34A0055DA1A /* Community.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Community.json; path = ../../../../../Community.json; sourceTree = "<group>"; };
 		E2A5DB89245B16160072BE09 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		E2A5DB92245B47850072BE09 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 		E2A5DB94245B4A460072BE09 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +108,8 @@
 		9B291A062458737D008CA217 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E240CA7C2462E3150055DA1A /* mockData */,
+				E240CA6D2460D8380055DA1A /* DataModel */,
 				E2A5DB96245B4AC50072BE09 /* OnboardingModel */,
 				9B291A0A245873D1008CA217 /* README.md */,
 			);
@@ -117,6 +137,29 @@
 				FED6C637245B12E8007F21C0 /* Fonts.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E240CA6D2460D8380055DA1A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E240CA7624618FD10055DA1A /* DataManager.swift */,
+				E240CA6E2460D85D0055DA1A /* Community.swift */,
+				E240CA702460D95E0055DA1A /* Post.swift */,
+				E240CA722460DA200055DA1A /* Person.swift */,
+				E240CA742460DB410055DA1A /* Comment.swift */,
+				E240CA782461AD9F0055DA1A /* PostPackage.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		E240CA7C2462E3150055DA1A /* mockData */ = {
+			isa = PBXGroup;
+			children = (
+				E240CA7F2462E34A0055DA1A /* Community.json */,
+				E240CA7E2462E34A0055DA1A /* Posts.json */,
+				E240CA7D2462E34A0055DA1A /* Users.json */,
+			);
+			path = mockData;
 			sourceTree = "<group>";
 		};
 		E2A5DB88245B16010072BE09 /* Onboarding */ = {
@@ -281,8 +324,11 @@
 				FEAE5AE724521FB300809C2E /* TabBar.storyboard in Resources */,
 				FEAE5AEF24522D9600809C2E /* Tags.storyboard in Resources */,
 				E2A5DB8A245B16160072BE09 /* Onboarding.storyboard in Resources */,
+				E240CA822462E34A0055DA1A /* Community.json in Resources */,
+				E240CA812462E34A0055DA1A /* Posts.json in Resources */,
 				FEA8121A2459E12F00329C3B /* SignUp.storyboard in Resources */,
 				FEAE5AEB2452203700809C2E /* MyPosts.storyboard in Resources */,
+				E240CA802462E34A0055DA1A /* Users.json in Resources */,
 				77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */,
 				FEAE5AED2452205100809C2E /* Notifications.storyboard in Resources */,
 				FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */,
@@ -320,19 +366,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E240CA6F2460D85D0055DA1A /* Community.swift in Sources */,
 				FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */,
 				FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */,
 				FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */,
 				E2A5DB9C245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift in Sources */,
 				E2A5DB93245B47850072BE09 /* OnboardingContentViewController.swift in Sources */,
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
+				E240CA752460DB410055DA1A /* Comment.swift in Sources */,
 				E2A5DB98245B4B110072BE09 /* PresentationContent.swift in Sources */,
 				E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */,
 				7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */,
 				7756D040245877F700003FF1 /* TagsViewController.swift in Sources */,
+				E240CA712460D95E0055DA1A /* Post.swift in Sources */,
 				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
+				E240CA7724618FD10055DA1A /* DataManager.swift in Sources */,
 				E2A5DB9A245B62E30072BE09 /* OnboardingViewController.swift in Sources */,
+				E240CA732460DA200055DA1A /* Person.swift in Sources */,
 				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,
+				E240CA792461AD9F0055DA1A /* PostPackage.swift in Sources */,
 				FED467782458BE350016AE68 /* FormTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
