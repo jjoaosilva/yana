@@ -12,6 +12,7 @@ class ViewPostHeaderTable: UIView {
 
     var nibName = "ViewPostHeaderTable"
     var contentView: UIView?
+    weak var delegate: ViewPostDelegate?
 
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
@@ -22,11 +23,18 @@ class ViewPostHeaderTable: UIView {
     @IBOutlet weak var utilPost: UIButton!
     @IBOutlet weak var commentPost: UIButton!
     @IBOutlet weak var savePost: UIButton!
-
+    @IBOutlet weak var labelView: UIView!
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupXib()
         layoutSettings()
+    }
+
+    @IBAction func managePostTapped(_ sender: UIButton) {
+        if let delegate = delegate {
+            delegate.callManageHeader()
+        }
     }
 
     func configure() {
@@ -52,21 +60,26 @@ class ViewPostHeaderTable: UIView {
         let nib = UINib(nibName: nibName, bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }
-    
+
     private func layoutSettings() {
         contentView?.backgroundColor = .defaultWhite
         userImage.layer.cornerRadius = userImage.bounds.width / 2
         userImage.backgroundColor = .defaultGray
         userName.textColor = .primaryColor
-        
+
         postTitle.textColor = .primaryColor
         postTitle.font = UIFont.bellotaTitle
         postContent.textColor = .primaryColor
-        
+
         tagPost.textColor = .defaultWhite
-        tagPost.backgroundColor = .primaryColor
-        tagPost.layer.cornerRadius = 5
-        tagPost.layer.masksToBounds = true
-        tagPost.drawText(in: CGRect(x: 50, y: 50, width: 50, height: 50))
+
+        labelView.backgroundColor = .primaryColor
+        labelView.layer.cornerRadius = 5
+        labelView.layer.masksToBounds = true
+
+        managePost.backgroundColor = .primaryColor
+        utilPost.backgroundColor = .primaryColor
+        commentPost.backgroundColor = .primaryColor
+        savePost.backgroundColor = .primaryColor
     }
 }

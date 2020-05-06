@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Comment {
+struct Comment1 {
     var userImage: String
     var userName: String
     var userComment: String
@@ -23,6 +23,7 @@ class ViewPostCellTable: UITableViewCell {
 
     static let nibName = "ViewPostCellTable"
     static let identifier =  "ViewPostCellTable"
+    weak var delegate: ViewPostDelegate?
 
     override func prepareForReuse() {
         userImage.image = nil
@@ -30,12 +31,18 @@ class ViewPostCellTable: UITableViewCell {
         userComment.text = nil
     }
 
-    func configure(with comment: Comment) {
+    func configure(with comment: Comment1) {
         userImage.image = UIImage(named: comment.userImage)
         userName.text = comment.userName
         userComment.text = comment.userComment
     }
 
+    @IBAction func manageCommentTapped(_ sender: UIButton) {
+        if let delegate = delegate {
+            delegate.callManageComment()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -46,5 +53,7 @@ class ViewPostCellTable: UITableViewCell {
         userImage.backgroundColor = .defaultGray
         userName.textColor = .defaultBlack
         userComment.textColor = .defaultBlack
+        
+        manageComment.backgroundColor = .primaryColor
     }
 }
