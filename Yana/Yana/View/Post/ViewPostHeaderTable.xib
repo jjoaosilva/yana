@@ -54,30 +54,38 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9m-KM-JKw">
-                    <rect key="frame" x="20" y="170" width="25" height="24"/>
+                    <rect key="frame" x="20" y="170" width="25" height="25"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" image="pencil.circle.fill" catalog="system">
+                    <state key="normal" image="hand_icon">
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                     </state>
+                    <connections>
+                        <action selector="utilButtonTapped:" destination="-1" eventType="touchUpInside" id="OfP-qa-Kkp"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-nm-Dbb">
-                    <rect key="frame" x="55" y="170" width="25" height="24"/>
+                    <rect key="frame" x="55" y="170" width="25" height="25"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" image="pencil.circle.fill" catalog="system">
+                    <state key="normal" image="pencilPrimaryColor">
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhU-FB-kCf">
-                    <rect key="frame" x="369" y="170" width="25" height="24"/>
+                    <rect key="frame" x="369" y="170" width="25" height="25"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" image="pencil.circle.fill" catalog="system">
+                    <state key="normal" image="stack_icon">
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                     </state>
+                    <connections>
+                        <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="jB4-ai-Dy6"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBc-54-pkS">
-                    <rect key="frame" x="369" y="18" width="25" height="24"/>
-                    <state key="normal" image="ellipsis.circle.fill" catalog="system">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="369" y="17.5" width="25" height="25"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="ellipisesPrimaryColor">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                     </state>
                     <connections>
@@ -130,11 +138,13 @@
                 <constraint firstItem="W9t-GX-L8n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="zIl-1R-XUK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+            <point key="canvasLocation" x="149" y="101"/>
         </view>
     </objects>
     <resources>
-        <image name="ellipsis.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="ellipisesPrimaryColor" width="25" height="25"/>
+        <image name="hand_icon" width="25" height="25"/>
+        <image name="pencilPrimaryColor" width="25" height="25"/>
+        <image name="stack_icon" width="25" height="25"/>
     </resources>
 </document>

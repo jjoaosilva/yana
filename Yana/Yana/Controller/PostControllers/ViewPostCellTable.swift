@@ -42,7 +42,7 @@ class ViewPostCellTable: UITableViewCell {
             delegate.callManageComment()
         }
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -53,7 +53,5 @@ class ViewPostCellTable: UITableViewCell {
         userImage.backgroundColor = .defaultGray
         userName.textColor = .defaultBlack
         userComment.textColor = .defaultBlack
-        
-        manageComment.backgroundColor = .primaryColor
     }
 }

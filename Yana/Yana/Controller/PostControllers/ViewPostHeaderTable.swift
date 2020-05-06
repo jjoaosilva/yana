@@ -13,7 +13,9 @@ class ViewPostHeaderTable: UIView {
     var nibName = "ViewPostHeaderTable"
     var contentView: UIView?
     weak var delegate: ViewPostDelegate?
-
+    var utilPostSelected: Bool = false
+    var savePosttSelected: Bool = false
+    
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var postTitle: UILabel!
@@ -24,7 +26,7 @@ class ViewPostHeaderTable: UIView {
     @IBOutlet weak var commentPost: UIButton!
     @IBOutlet weak var savePost: UIButton!
     @IBOutlet weak var labelView: UIView!
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupXib()
@@ -35,6 +37,16 @@ class ViewPostHeaderTable: UIView {
         if let delegate = delegate {
             delegate.callManageHeader()
         }
+    }
+
+    @IBAction func utilButtonTapped(_ sender: UIButton) {
+        utilPost.setImage(UIImage(named: utilPostSelected ? "hand_icon_selected" : "hand_icon"), for: .normal)
+        utilPostSelected = !utilPostSelected
+    }
+
+    @IBAction func saveButtonTapped(_ sender: UIButton) {
+        savePost.setImage(UIImage(named: savePosttSelected ? "stack_icon_selected" : "stack_icon"), for: .normal)
+        savePosttSelected = !savePosttSelected
     }
 
     func configure() {
@@ -76,10 +88,5 @@ class ViewPostHeaderTable: UIView {
         labelView.backgroundColor = .primaryColor
         labelView.layer.cornerRadius = 5
         labelView.layer.masksToBounds = true
-
-        managePost.backgroundColor = .primaryColor
-        utilPost.backgroundColor = .primaryColor
-        commentPost.backgroundColor = .primaryColor
-        savePost.backgroundColor = .primaryColor
     }
 }
