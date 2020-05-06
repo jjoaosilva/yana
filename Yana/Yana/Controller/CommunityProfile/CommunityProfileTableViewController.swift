@@ -60,6 +60,7 @@ class CommunityProfileTableViewController: UITableViewController {
 
     private func layoutSettings() {
         viewTable.backgroundColor = .defaultWhite
+        tableView.allowsSelection = false
 
         tagCommunity.textColor = .primaryColor
         tagCommunity.font = .bellotaTitle
