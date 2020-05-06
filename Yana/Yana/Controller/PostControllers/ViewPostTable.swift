@@ -12,9 +12,9 @@ class ViewPostTable: UIViewController {
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var headerTable: ViewPostHeaderTable!
-    
+
     private var comments: [Comment] = [Comment]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         headerTable.configure()
@@ -25,11 +25,14 @@ class ViewPostTable: UIViewController {
     private func configureTable() {
         let tableCellNib = UINib(nibName: ViewPostCellTable.nibName, bundle: nil)
         table.register(tableCellNib, forCellReuseIdentifier: ViewPostCellTable.identifier)
+
+        table.allowsSelection = false
+        table.separatorStyle = .none
     }
 
-    private func createComments(){
+    private func createComments() {
         comments.append( Comment(userImage: "", userName: "Fulano de tal", userComment: "Hey man, compra um farol dahora que ele vai gostar, boto fé. #TMJ!"))
-        
+
         comments.append( Comment(userImage: "", userName: "Tal de Fulano", userComment: "Que absurdo! nessa idade? poe o muleke numa moto né mano. #Fe"))
 
         comments.append( Comment(userImage: "", userName: "Senhor fulano", userComment: "Com essa idade meu filho fez A/B, entao dei uma moto, concordo com o @Tal de Fulano. #Segue"))
@@ -48,7 +51,13 @@ extension ViewPostTable: UITableViewDataSource, UITableViewDelegate {
 
         let comment = comments[indexPath.row]
         cell.configure(with: comment)
-
+        cell.backgroundColor = .defaultWhite
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+            let view = UIView()
+            view.backgroundColor = .defaultWhite
+            return view
     }
 }

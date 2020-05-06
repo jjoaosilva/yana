@@ -12,8 +12,9 @@
                 <outlet property="commentPost" destination="IRc-nm-Dbb" id="rlK-pc-ZxE"/>
                 <outlet property="managePost" destination="oBc-54-pkS" id="B7P-Pp-VAf"/>
                 <outlet property="postContent" destination="jcg-6x-nVR" id="Qtc-wL-6lR"/>
-                <outlet property="postTile" destination="pIe-9M-FbD" id="BAT-Qm-1DQ"/>
+                <outlet property="postTitle" destination="pIe-9M-FbD" id="2yv-S1-FAW"/>
                 <outlet property="savePost" destination="zhU-FB-kCf" id="BSC-BV-1So"/>
+                <outlet property="tagPost" destination="Rem-SY-yF1" id="5iV-rF-vdm"/>
                 <outlet property="userImage" destination="W9t-GX-L8n" id="Ttq-2Q-naf"/>
                 <outlet property="userName" destination="XEF-Q8-vMa" id="Puk-i2-e8L"/>
                 <outlet property="utilPost" destination="C9m-KM-JKw" id="DQ7-3D-l73"/>
@@ -52,7 +53,8 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-SY-yF1">
-                    <rect key="frame" x="20" y="164" width="364" height="12"/>
+                    <rect key="frame" x="20" y="164" width="26.5" height="12"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -88,7 +90,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="jcg-6x-nVR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="0oh-UC-JBd"/>
-                <constraint firstAttribute="trailing" secondItem="Rem-SY-yF1" secondAttribute="trailing" constant="30" id="7eD-B8-0Id"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rem-SY-yF1" secondAttribute="trailing" constant="30" id="7eD-B8-0Id"/>
                 <constraint firstItem="XEF-Q8-vMa" firstAttribute="centerY" secondItem="W9t-GX-L8n" secondAttribute="centerY" id="AT3-U6-a7x"/>
                 <constraint firstAttribute="trailing" secondItem="jcg-6x-nVR" secondAttribute="trailing" constant="30" id="AiF-m7-UT5"/>
                 <constraint firstItem="zhU-FB-kCf" firstAttribute="top" secondItem="Rem-SY-yF1" secondAttribute="bottom" constant="5" id="D1x-vJ-6ly"/>

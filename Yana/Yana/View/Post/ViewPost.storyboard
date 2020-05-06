@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQ5-iq-4ja">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="XFy-t8-EbY" customClass="ViewPostHeaderTable" customModule="Yana" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="204.99999999999997"/>
@@ -40,14 +40,17 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BQ5-iq-4ja" firstAttribute="top" secondItem="UIs-1L-lhb" secondAttribute="top" id="0oW-y9-boS"/>
-                            <constraint firstItem="UIs-1L-lhb" firstAttribute="bottom" secondItem="BQ5-iq-4ja" secondAttribute="bottom" id="AFE-0o-Qwn"/>
+                            <constraint firstAttribute="bottom" secondItem="BQ5-iq-4ja" secondAttribute="bottom" id="AFE-0o-Qwn"/>
                             <constraint firstItem="UIs-1L-lhb" firstAttribute="trailing" secondItem="BQ5-iq-4ja" secondAttribute="trailing" id="FSu-pS-MEB"/>
                             <constraint firstItem="BQ5-iq-4ja" firstAttribute="leading" secondItem="UIs-1L-lhb" secondAttribute="leading" id="SMl-FO-vJO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UIs-1L-lhb"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -57,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMs-Aa-1cO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-496" y="135"/>
+            <point key="canvasLocation" x="-497.10144927536237" y="134.5108695652174"/>
         </scene>
     </scenes>
 </document>
