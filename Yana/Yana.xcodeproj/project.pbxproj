@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7756D040245877F700003FF1 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D03F245877F700003FF1 /* TagsViewController.swift */; };
 		7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D0412458791A00003FF1 /* MakePostViewController.swift */; };
+		77C66B0D24619EAB00E539EE /* CommunityProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C66B0C24619EAB00E539EE /* CommunityProfileTableViewController.swift */; };
+		77C66B0F2461AF6300E539EE /* CommunityProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C66B0E2461AF6300E539EE /* CommunityProfileTableViewCell.swift */; };
+		77D470B624608DDD003C2F4C /* CommunityProfile .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D470B524608DDD003C2F4C /* CommunityProfile .storyboard */; };
 		77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EF7AD82458ACEB0088B44B /* MakePost.storyboard */; };
 		9B291A0B245873D1008CA217 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B291A0A245873D1008CA217 /* README.md */; };
 		9BB2251C24575FB20026B831 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2251B24575FB20026B831 /* Colors.swift */; };
@@ -33,6 +36,9 @@
 /* Begin PBXFileReference section */
 		7756D03F245877F700003FF1 /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		7756D0412458791A00003FF1 /* MakePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePostViewController.swift; sourceTree = "<group>"; };
+		77C66B0C24619EAB00E539EE /* CommunityProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityProfileTableViewController.swift; sourceTree = "<group>"; };
+		77C66B0E2461AF6300E539EE /* CommunityProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityProfileTableViewCell.swift; sourceTree = "<group>"; };
+		77D470B524608DDD003C2F4C /* CommunityProfile .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "CommunityProfile .storyboard"; sourceTree = "<group>"; };
 		77EF7AD82458ACEB0088B44B /* MakePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakePost.storyboard; sourceTree = "<group>"; };
 		9B291A0A245873D1008CA217 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9BB2251B24575FB20026B831 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -67,12 +73,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77017A912462F1AF0039AA50 /* CommunityProfile */ = {
+			isa = PBXGroup;
+			children = (
+				77C66B0E2461AF6300E539EE /* CommunityProfileTableViewCell.swift */,
+				77C66B0C24619EAB00E539EE /* CommunityProfileTableViewController.swift */,
+			);
+			path = CommunityProfile;
+			sourceTree = "<group>";
+		};
 		776708B524603FB8001BB9F9 /* Make Post */ = {
 			isa = PBXGroup;
 			children = (
 				77EF7AD82458ACEB0088B44B /* MakePost.storyboard */,
 			);
 			path = "Make Post";
+			sourceTree = "<group>";
+		};
+		77D470B424608B30003C2F4C /* Community Profile  */ = {
+			isa = PBXGroup;
+			children = (
+				77D470B524608DDD003C2F4C /* CommunityProfile .storyboard */,
+			);
+			path = "Community Profile ";
 			sourceTree = "<group>";
 		};
 		9B291A062458737D008CA217 /* Model */ = {
@@ -86,6 +109,7 @@
 		9B291A0724587389008CA217 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				77017A912462F1AF0039AA50 /* CommunityProfile */,
 				7756D03F245877F700003FF1 /* TagsViewController.swift */,
 				7756D0412458791A00003FF1 /* MakePostViewController.swift */,
 				FEA812162459CBC700329C3B /* LogInViewController.swift */,
@@ -146,6 +170,7 @@
 		FEAE5AE324521F7800809C2E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77D470B424608B30003C2F4C /* Community Profile  */,
 				776708B524603FB8001BB9F9 /* Make Post */,
 				FEA812182459E06100329C3B /* SignUp */,
 				FED4674E245896E50016AE68 /* Login */,
@@ -242,6 +267,7 @@
 				FEAE5AEB2452203700809C2E /* MyPosts.storyboard in Resources */,
 				77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */,
 				FEAE5AED2452205100809C2E /* Notifications.storyboard in Resources */,
+				77D470B624608DDD003C2F4C /* CommunityProfile .storyboard in Resources */,
 				FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */,
 				FEAE5AE92452202800809C2E /* Feed.storyboard in Resources */,
 				9B291A0B245873D1008CA217 /* README.md in Resources */,
@@ -277,11 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C66B0F2461AF6300E539EE /* CommunityProfileTableViewCell.swift in Sources */,
 				FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */,
 				FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */,
 				FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */,
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
 				7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */,
+				77C66B0D24619EAB00E539EE /* CommunityProfileTableViewController.swift in Sources */,
 				7756D040245877F700003FF1 /* TagsViewController.swift in Sources */,
 				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
 				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,

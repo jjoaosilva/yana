@@ -22,7 +22,8 @@ class MakePostViewController: UIViewController {
     @IBOutlet weak var plusCommunityLabel: UILabel!
     @IBOutlet weak var plusMediaLabel: UILabel!
     @IBOutlet weak var postContent: UITextView!
-
+    @IBOutlet weak var titlePage: UINavigationItem!
+    
     // MARK: - Initializations
 
     override func viewDidLoad() {
@@ -30,9 +31,7 @@ class MakePostViewController: UIViewController {
         if #available(iOS 13.0, *) {
             self.isModalInPresentation = true
         }
-        setupColors()
-        imageUser.layer.masksToBounds = true
-        imageUser.layer.cornerRadius = imageUser.bounds.width / 2
+        layoutSettings()
 
         //On-screen keyboard configuration
         NotificationCenter.default.addObserver(self,
@@ -81,8 +80,8 @@ class MakePostViewController: UIViewController {
 
     // MARK: - Methods
 
-    // Adjusts the colors of the page parameters
-    func setupColors() {
+    // Adjusts the layout of the page parameters
+    private func layoutSettings() {
         view.backgroundColor = .defaultWhite
 
         nameUser.textColor = .primaryColor
@@ -96,15 +95,22 @@ class MakePostViewController: UIViewController {
 
         cancelButtonBar.tintColor = .primaryColor
         doneButtonBar.tintColor = .primaryColor
+        navigationItem.title = "Post"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.primaryColor]
 
         postTitle.backgroundColor = .defaultWhite
         postTitle.borderColor = .primaryColor
         postTitle.borderWidth = 1
         postTitle.cornerRadius = 10
+        postTitle.textColor = .primaryColor
 
         postContent.backgroundColor = .defaultWhite
         postContent.layer.borderColor = UIColor.primaryColor.cgColor
         postContent.layer.borderWidth = 1
         postContent.layer.cornerRadius = 10
+        postContent.textColor = .primaryColor
+
+        imageUser.layer.masksToBounds = true
+        imageUser.layer.cornerRadius = imageUser.bounds.width / 2
     }
 }

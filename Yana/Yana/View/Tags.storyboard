@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="az3-gJ-2sU">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nI8-hM-quq">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,24 +8,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tags-->
+        <!--View Controller-->
         <scene sceneID="qDo-Dc-YOH">
             <objects>
                 <viewController id="az3-gJ-2sU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lCR-qY-ZNd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-Ol-j4m">
+                                <rect key="frame" x="124" y="368" width="124" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Perfil comunidade"/>
+                                <connections>
+                                    <action selector="communityButton:" destination="rbd-5v-mM2" eventType="touchUpInside" id="Joc-HP-WBp"/>
+                                    <action selector="communityProfileButton:" destination="rbd-5v-mM2" eventType="touchUpInside" id="LHk-l8-kIj"/>
+                                    <segue destination="9UD-vk-DSw" kind="show" id="6qd-KG-Qp7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="i8S-rt-ZEp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tags" image="tag.fill" catalog="system" id="kyq-V9-Lam">
-                        <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="ODh-HI-vCH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyE-Xv-Grk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rbd-5v-mM2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="232" y="-127"/>
+            <point key="canvasLocation" x="1139.1304347826087" y="-127.17391304347827"/>
+        </scene>
+        <!--CommunityProfile -->
+        <scene sceneID="dXv-De-WR2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CommunityProfile " id="9UD-vk-DSw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="trD-uV-sTa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqY-te-N5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886.2318840579712" y="-127.17391304347827"/>
+        </scene>
+        <!--Tags-->
+        <scene sceneID="0iE-Jf-NHd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nI8-hM-quq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tags" image="tag.fill" catalog="system" id="kyq-V9-Lam">
+                        <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vwy-0G-QWy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="az3-gJ-2sU" kind="relationship" relationship="rootViewController" id="Jk3-1c-nxU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKs-3Q-rTC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231.8840579710145" y="-127.17391304347827"/>
         </scene>
     </scenes>
     <resources>

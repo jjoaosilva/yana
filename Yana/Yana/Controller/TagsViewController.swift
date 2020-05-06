@@ -10,25 +10,20 @@ import UIKit
 
 class TagsViewController: UIViewController {
 
-    
-    @IBOutlet weak var modalButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
-    @IBAction func modalButton(_ sender: UIButton) {
-        
-        self.performSegue(withIdentifier: "makePost", sender: nil)
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let destination = segue.destination as? UINavigationController
-        let controller =  destination!.topViewController! as? MakePostViewController
 
-    }
+//    @IBAction func communityProfileButton(_ sender: UIButton) {
+//        self.performSegue(withIdentifier: "CommunityProfile", sender: nil)
+//
+//    }
+//    
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        let destination = segue.destination as? UINavigationController
+//        _ =  destination!.topViewController! as? CommunityProfileViewController
+//    }
 
 }

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Post-->
+        <!--Make Post View Controller-->
         <scene sceneID="WQR-yX-lbB">
             <objects>
                 <viewController id="cpb-Da-HkI" customClass="MakePostViewController" customModule="Yana" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,7 +111,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gc1-CM-FS1"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Post" id="HZm-2p-Kss">
+                    <navigationItem key="navigationItem" id="HZm-2p-Kss">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="hGr-HC-Z8x">
                             <connections>
                                 <action selector="cancelBarButton:" destination="cpb-Da-HkI" id="NFE-F7-6sC"/>
