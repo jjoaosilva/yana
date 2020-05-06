@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hrN-fB-pbS">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -11,21 +11,55 @@
         <!--Feed-->
         <scene sceneID="YFv-eS-XUy">
             <objects>
-                <viewController id="hrN-fB-pbS" sceneMemberID="viewController">
+                <viewController id="hrN-fB-pbS" customClass="FeedViewController" customModule="Yana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vFX-qm-vnA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNQ-Wn-9ME">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Feed" id="cFV-OI-9RV"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Lw-Vn-o6O">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="uvc-Xj-Rtk" customClass="FeedHeaderView" customModule="Yana" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="hrN-fB-pbS" id="ffs-jo-41a"/>
+                                    <outlet property="delegate" destination="hrN-fB-pbS" id="SFe-ad-9yr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98812824489999995" green="0.98829704519999995" blue="0.98811751599999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zNQ-Wn-9ME" firstAttribute="trailing" secondItem="N2i-c5-PIa" secondAttribute="trailing" id="4mo-r6-q1P"/>
+                            <constraint firstItem="zNQ-Wn-9ME" firstAttribute="leading" secondItem="N2i-c5-PIa" secondAttribute="leading" id="9f7-Ra-OKY"/>
+                            <constraint firstItem="6Lw-Vn-o6O" firstAttribute="top" secondItem="zNQ-Wn-9ME" secondAttribute="bottom" id="BcA-jE-bJm"/>
+                            <constraint firstItem="N2i-c5-PIa" firstAttribute="bottom" secondItem="6Lw-Vn-o6O" secondAttribute="bottom" id="Kw9-lf-dIX"/>
+                            <constraint firstItem="zNQ-Wn-9ME" firstAttribute="top" secondItem="N2i-c5-PIa" secondAttribute="top" id="X27-IP-vig"/>
+                            <constraint firstItem="6Lw-Vn-o6O" firstAttribute="trailing" secondItem="N2i-c5-PIa" secondAttribute="trailing" id="nSb-iN-33z"/>
+                            <constraint firstItem="6Lw-Vn-o6O" firstAttribute="leading" secondItem="N2i-c5-PIa" secondAttribute="leading" id="oBY-Dj-mbl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="N2i-c5-PIa"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="house" catalog="system" selectedImage="house.fill" id="iH8-z8-Gpi">
                         <color key="badgeColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="header" destination="uvc-Xj-Rtk" id="SCv-Hy-h2b"/>
+                        <outlet property="table" destination="6Lw-Vn-o6O" id="1XY-G8-sp4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7b-yK-9M5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="109"/>
+            <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
         </scene>
     </scenes>
     <resources>

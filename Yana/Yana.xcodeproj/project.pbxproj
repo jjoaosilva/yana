@@ -18,6 +18,15 @@
 		E2A5DB98245B4B110072BE09 /* PresentationContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB97245B4B110072BE09 /* PresentationContent.swift */; };
 		E2A5DB9A245B62E30072BE09 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */; };
 		E2A5DB9C245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */; };
+		FE81FCDA246324230043D347 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81FCD8246324230043D347 /* PostCollectionViewCell.swift */; };
+		FE81FCDB246324230043D347 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE81FCD9246324230043D347 /* PostCollectionViewCell.xib */; };
+		FE81FCDE246344A50043D347 /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81FCDC246344A50043D347 /* CommunityTableViewCell.swift */; };
+		FE81FCDF246344A50043D347 /* CommunityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE81FCDD246344A50043D347 /* CommunityTableViewCell.xib */; };
+		FE8730CB2461DA3B000A2B83 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8730CA2461DA3B000A2B83 /* Tag.swift */; };
+		FE8730CD2461DAA2000A2B83 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8730CC2461DAA2000A2B83 /* Post.swift */; };
+		FE8730CF2461DB18000A2B83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8730CE2461DB18000A2B83 /* User.swift */; };
+		FE9BC7D92462E9EA003BCBFA /* RecentActivitySectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9BC7D82462E9EA003BCBFA /* RecentActivitySectionHeader.xib */; };
+		FE9BC7DB2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9BC7DA2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift */; };
 		FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */; };
 		FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA812162459CBC700329C3B /* LogInViewController.swift */; };
 		FEA8121A2459E12F00329C3B /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA812192459E12F00329C3B /* SignUp.storyboard */; };
@@ -33,6 +42,9 @@
 		FED46750245896FD0016AE68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED4674F245896FD0016AE68 /* Login.storyboard */; };
 		FED467782458BE350016AE68 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED467772458BE350016AE68 /* FormTextField.swift */; };
 		FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED467792458C8A30016AE68 /* FormButton.swift */; };
+		FED4D5472460A5420070861F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4D5462460A5420070861F /* FeedViewController.swift */; };
+		FED4D54C2460AEA70070861F /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4D54B2460AEA70070861F /* FeedHeaderView.swift */; };
+		FED4D5522460C2090070861F /* FeedHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED4D5512460C2090070861F /* FeedHeader.xib */; };
 		FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6C637245B12E8007F21C0 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +60,15 @@
 		E2A5DB97245B4B110072BE09 /* PresentationContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContent.swift; sourceTree = "<group>"; };
 		E2A5DB99245B62E30072BE09 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		E2A5DB9B245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
+		FE81FCD8246324230043D347 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE81FCD9246324230043D347 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		FE81FCDC246344A50043D347 /* CommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableViewCell.swift; sourceTree = "<group>"; };
+		FE81FCDD246344A50043D347 /* CommunityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityTableViewCell.xib; sourceTree = "<group>"; };
+		FE8730CA2461DA3B000A2B83 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		FE8730CC2461DAA2000A2B83 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FE8730CE2461DB18000A2B83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FE9BC7D82462E9EA003BCBFA /* RecentActivitySectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentActivitySectionHeader.xib; sourceTree = "<group>"; };
+		FE9BC7DA2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivitySectionHeaderView.swift; sourceTree = "<group>"; };
 		FEA812162459CBC700329C3B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FEA812192459E12F00329C3B /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		FEAE5ACC245215B000809C2E /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +86,9 @@
 		FED467772458BE350016AE68 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		FED467792458C8A30016AE68 /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
 		FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bellota-Bold.ttf"; sourceTree = "<group>"; };
+		FED4D5462460A5420070861F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FED4D54B2460AEA70070861F /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
+		FED4D5512460C2090070861F /* FeedHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeader.xib; sourceTree = "<group>"; };
 		FED6C637245B12E8007F21C0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +116,9 @@
 			children = (
 				E2A5DB96245B4AC50072BE09 /* OnboardingModel */,
 				9B291A0A245873D1008CA217 /* README.md */,
+				FE8730CA2461DA3B000A2B83 /* Tag.swift */,
+				FE8730CC2461DAA2000A2B83 /* Post.swift */,
+				FE8730CE2461DB18000A2B83 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +126,7 @@
 		9B291A0724587389008CA217 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FED4D5452460A52F0070861F /* Feed */,
 				E2A5DB8D245B43E00072BE09 /* OnboardingControllers */,
 				7756D03F245877F700003FF1 /* TagsViewController.swift */,
 				7756D0412458791A00003FF1 /* MakePostViewController.swift */,
@@ -145,6 +173,43 @@
 			path = OnboardingModel;
 			sourceTree = "<group>";
 		};
+		FE8730BE24618E5F000A2B83 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE81FCD8246324230043D347 /* PostCollectionViewCell.swift */,
+				FE81FCD9246324230043D347 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		FE9BC7D62462E9B9003BCBFA /* CommunityCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE8730BE24618E5F000A2B83 /* PostCell */,
+				FE81FCDC246344A50043D347 /* CommunityTableViewCell.swift */,
+				FE81FCDD246344A50043D347 /* CommunityTableViewCell.xib */,
+			);
+			path = CommunityCell;
+			sourceTree = "<group>";
+		};
+		FE9BC7D72462E9CC003BCBFA /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				FE9BC7D82462E9EA003BCBFA /* RecentActivitySectionHeader.xib */,
+				FE9BC7DA2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
+		FEA2159B2462F20B00F2110D /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D5482460AB350070861F /* Header */,
+				FED4D5402460A4DA0070861F /* RecentActivity */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		FEA812182459E06100329C3B /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +252,7 @@
 		FEAE5AE324521F7800809C2E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FED4D53E2460A4BA0070861F /* Xibs */,
 				E2A5DB88245B16010072BE09 /* Onboarding */,
 				776708B524603FB8001BB9F9 /* Make Post */,
 				FEA812182459E06100329C3B /* SignUp */,
@@ -216,6 +282,40 @@
 				FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FED4D53E2460A4BA0070861F /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FEA2159B2462F20B00F2110D /* Feed */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		FED4D5402460A4DA0070861F /* RecentActivity */ = {
+			isa = PBXGroup;
+			children = (
+				FE9BC7D72462E9CC003BCBFA /* SectionHeader */,
+				FE9BC7D62462E9B9003BCBFA /* CommunityCell */,
+			);
+			path = RecentActivity;
+			sourceTree = "<group>";
+		};
+		FED4D5452460A52F0070861F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D5462460A5420070861F /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FED4D5482460AB350070861F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D5512460C2090070861F /* FeedHeader.xib */,
+				FED4D54B2460AEA70070861F /* FeedHeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +379,8 @@
 			files = (
 				FEAE5ADC245215B300809C2E /* LaunchScreen.storyboard in Resources */,
 				FEAE5AE724521FB300809C2E /* TabBar.storyboard in Resources */,
+				FE81FCDF246344A50043D347 /* CommunityTableViewCell.xib in Resources */,
+				FE9BC7D92462E9EA003BCBFA /* RecentActivitySectionHeader.xib in Resources */,
 				FEAE5AEF24522D9600809C2E /* Tags.storyboard in Resources */,
 				E2A5DB8A245B16160072BE09 /* Onboarding.storyboard in Resources */,
 				FEA8121A2459E12F00329C3B /* SignUp.storyboard in Resources */,
@@ -286,8 +388,10 @@
 				77EF7AD92458ACEB0088B44B /* MakePost.storyboard in Resources */,
 				FEAE5AED2452205100809C2E /* Notifications.storyboard in Resources */,
 				FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */,
+				FED4D5522460C2090070861F /* FeedHeader.xib in Resources */,
 				FEAE5AE92452202800809C2E /* Feed.storyboard in Resources */,
 				9B291A0B245873D1008CA217 /* README.md in Resources */,
+				FE81FCDB246324230043D347 /* PostCollectionViewCell.xib in Resources */,
 				FED46750245896FD0016AE68 /* Login.storyboard in Resources */,
 				FEAE5AD9245215B300809C2E /* Assets.xcassets in Resources */,
 			);
@@ -320,20 +424,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE81FCDA246324230043D347 /* PostCollectionViewCell.swift in Sources */,
 				FED6C638245B12E8007F21C0 /* Fonts.swift in Sources */,
 				FEA812172459CBC700329C3B /* LogInViewController.swift in Sources */,
 				FED4677A2458C8A30016AE68 /* FormButton.swift in Sources */,
 				E2A5DB9C245FB8730072BE09 /* OnboardingPageViewControllerDelegate.swift in Sources */,
 				E2A5DB93245B47850072BE09 /* OnboardingContentViewController.swift in Sources */,
 				FEAE5AD0245215B000809C2E /* AppDelegate.swift in Sources */,
+				FED4D5472460A5420070861F /* FeedViewController.swift in Sources */,
+				FE9BC7DB2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift in Sources */,
 				E2A5DB98245B4B110072BE09 /* PresentationContent.swift in Sources */,
 				E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */,
 				7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */,
 				7756D040245877F700003FF1 /* TagsViewController.swift in Sources */,
+				FE8730CB2461DA3B000A2B83 /* Tag.swift in Sources */,
 				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
+				FED4D54C2460AEA70070861F /* FeedHeaderView.swift in Sources */,
 				E2A5DB9A245B62E30072BE09 /* OnboardingViewController.swift in Sources */,
 				FEAE5AD2245215B000809C2E /* SceneDelegate.swift in Sources */,
 				FED467782458BE350016AE68 /* FormTextField.swift in Sources */,
+				FE81FCDE246344A50043D347 /* CommunityTableViewCell.swift in Sources */,
+				FE8730CD2461DAA2000A2B83 /* Post.swift in Sources */,
+				FE8730CF2461DB18000A2B83 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
