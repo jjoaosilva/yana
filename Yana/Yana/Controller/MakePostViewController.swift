@@ -23,11 +23,11 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var plusMediaLabel: UILabel!
     @IBOutlet weak var postContent: UITextView!
     @IBOutlet weak var titlePage: UINavigationItem!
-
-    var person: PostPackage?
-    let manager = DataManager()
-    var users = [Person]()
+    @IBOutlet weak var communityName: UIButton!
+    static let manager = DataManager()
+    var currentUser: Person = manager.getUsers().first!
     var post: Post?
+    var community: String?
 
     // MARK: - Initializations
 
@@ -37,7 +37,6 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
         if #available(iOS 13.0, *) {
             self.isModalInPresentation = true
         }
-        users = manager.getUsers()
         layoutSettings()
         updateSaveButtonState()
 
@@ -77,12 +76,12 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func doneBarButton(_ sender: UIBarButtonItem) {
-        post?.title = postTitle.text ?? ""
-        post?.description = postContent.text
-        post?.personID = person!.personID
-        post?.communityID = person!.communityID
-        post?.useful = 20
-        post?.status = true
+//        post?.title = postTitle.text ?? ""
+//        post?.description = postContent.text
+//        post?.personID = person!.personID
+//        post?.communityID = person!.communityID
+//        post?.useful = 20
+//        post?.status = true
     }
 
     // MARK: - Navigation
@@ -116,15 +115,20 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
         view.backgroundColor = .defaultWhite
 
         nameUser.textColor = .primaryColor
-        nameUser.text = users[person!.personID].userName
+        nameUser.text = currentUser.userName
 
         plusMediaLabel.textColor = .primaryColor
         plusMediaButton.tintColor = .primaryColor
         plusCommunityLabel.textColor = .primaryColor
         plusCommunityButton.tintColor = .primaryColor
 
+        communityName.setTitle(community, for: .normal)
+        communityName.tintColor = .defaultWhite
+        communityName.backgroundColor = .primaryColor
+        communityName.layer.cornerRadius = 10
+
         imageUser.tintColor = .primaryColor
-        imageUser.image = UIImage(named: users[person!.personID].imageNameProfile)
+        imageUser.image = UIImage(named: currentUser.imageNameProfile)
         imageUser.layer.masksToBounds = true
         imageUser.layer.cornerRadius = imageUser.bounds.width / 2
 

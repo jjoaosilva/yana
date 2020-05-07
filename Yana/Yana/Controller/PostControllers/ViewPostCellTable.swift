@@ -31,10 +31,10 @@ class ViewPostCellTable: UITableViewCell {
         userComment.text = nil
     }
 
-    func configure(with comment: Comment1) {
-        userImage.image = UIImage(named: comment.userImage)
-        userName.text = comment.userName
-        userComment.text = comment.userComment
+    func configure(with comment: Comment, and author: Person) {
+        userImage.image = UIImage(named: author.imageNameProfile)
+        userName.text = author.userName
+        userComment.text = comment.commentText
     }
 
     @IBAction func manageCommentTapped(_ sender: UIButton) {

@@ -13,20 +13,30 @@ class ViewPostTable: UIViewController {
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var headerTable: ViewPostHeaderTable!
 
-    private var comments: [Comment1] = [Comment1]()
-    private var manage: DataManager = DataManager()
     var post: PostPackage?
+    private var datamanager: DataManager = DataManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        createComments()
         configureHeaderTable()
         configureTable()
     }
 
+    private func findCommunityName(communityID: Int) -> String {
+        let communities = datamanager.getCommunities()
+        let community = communities.filter { $0.communityID == communityID}.first
+
+        return community?.communityName ?? ""
+    }
+
     private func configureHeaderTable() {
-        headerTable.configure()
-        headerTable.delegate = self
+        if let post = self.post {
+
+            let communityName = findCommunityName(communityID: post.communityID)
+
+            headerTable.configure(userImage: post.authorImageName, userName: post.authorName, postTitle: post.title, postContent: post.description, communityName: communityName)
+            headerTable.delegate = self
+        }
     }
 
     private func configureTable() {
@@ -35,21 +45,12 @@ class ViewPostTable: UIViewController {
 
         table.allowsSelection = false
         table.separatorStyle = .none
-
-    }
-
-    private func createComments() {
-        comments.append( Comment1(userImage: "", userName: "Fulano de tal", userComment: "Hey man, compra um farol dahora que ele vai gostar, boto fé. #TMJ!"))
-
-        comments.append( Comment1(userImage: "", userName: "Tal de Fulano", userComment: "Que absurdo! nessa idade? poe o muleke numa moto né mano. #Fe"))
-
-        comments.append( Comment1(userImage: "", userName: "Senhor fulano", userComment: "Com essa idade meu filho fez A/B, entao dei uma moto, concordo com o @Tal de Fulano. #Segue"))
     }
 }
 
 extension ViewPostTable: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return comments.count
+        return post?.comments.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,8 +58,14 @@ extension ViewPostTable: UITableViewDataSource, UITableViewDelegate {
             fatalError("erro na cel")
         }
 
-        let comment = comments[indexPath.row]
-        cell.configure(with: comment)
+        guard let post = self.post else {
+            return UITableViewCell()
+        }
+
+        let comment = post.comments[indexPath.row]
+        let user = datamanager.getAuthorOfPost(userIdentifier: comment.personID)
+
+        cell.configure(with: comment, and: user)
         cell.backgroundColor = .defaultWhite
         cell.delegate = self
 

@@ -20,15 +20,12 @@ class CommunityProfileTableViewController: UITableViewController {
 
     let manager = DataManager()
     var infocommunity = [PostPackage]()
-    var community: Community?
+    var communityID: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutSettings()
-        //tabBarController?.tabBar.isHidden = true
-        infocommunity = manager.getAllActivitiesCommunity(identifier: 1)
-
-        //setInformationsCommunity()
+        setInformationsCommunity()
     }
 
     // MARK: - Table view data source
@@ -65,12 +62,22 @@ class CommunityProfileTableViewController: UITableViewController {
 //        return view
 //
 //    }
-//
-//    func setInformationsCommunity() {
-//        imageCommunity.image = UIImage(named: community.imageNameBackground)
-//        tagCommunity.text = community.communityName
-//        peopleTalkLabel.text = "\(community.numberFollowers) pessoas falando sobre isso"
-//    }
+
+    func setInformationsCommunity() {
+        guard let id = communityID, let community = findCommunity(communityID: id) else {
+            fatalError("erro")
+        }
+        imageCommunity.image = UIImage(named: community.imageNameBackground)
+        tagCommunity.text = community.communityName
+        peopleTalkLabel.text = "\(community.numberFollowers) pessoas falando sobre isso"
+    }
+
+    private func findCommunity(communityID: Int) -> Community? {
+        let communities = manager.getCommunities()
+        let community = communities.filter { $0.communityID == communityID}.first
+
+        return community
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
@@ -83,7 +90,7 @@ class CommunityProfileTableViewController: UITableViewController {
             guard let makePostViewController = navigation.topViewController as? MakePostViewController else {
                 fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
             }
-            makePostViewController.person = infocommunity[1]
+            makePostViewController.community = tagCommunity.text
         case "viewPost":
             //Obtem o viewcontroller de destino
             guard let postDetailViewController = segue.destination as? ViewPostTable else {
@@ -110,7 +117,6 @@ class CommunityProfileTableViewController: UITableViewController {
 
     private func layoutSettings() {
         viewTable.backgroundColor = .defaultWhite
-//        tableView.allowsSelection = false
 
         tagCommunity.textColor = .primaryColor
         tagCommunity.font = .bellotaTitle
@@ -133,8 +139,10 @@ class CommunityProfileTableViewController: UITableViewController {
 
         if #available(iOS 13.0, *) {
             optionsChoise.selectedSegmentTintColor = .primaryColor
+            optionsChoise.backgroundColor = .secondaryColor
         } else {
             optionsChoise.tintColor = .primaryColor
+            optionsChoise.backgroundColor = .secondaryColor
         }
         optionsChoise.backgroundColor = .secondaryColor
 

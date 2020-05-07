@@ -12,10 +12,10 @@ class ViewPostHeaderTable: UIView {
 
     var nibName = "ViewPostHeaderTable"
     var contentView: UIView?
-    weak var delegate: ViewPostDelegate?
     var utilPostSelected: Bool = false
     var savePosttSelected: Bool = false
-    
+    weak var delegate: ViewPostDelegate?
+
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var postTitle: UILabel!
@@ -49,13 +49,12 @@ class ViewPostHeaderTable: UIView {
         savePosttSelected = !savePosttSelected
     }
 
-    func configure() {
-        userName.text = "Joao da quebrada"
-        postTitle.text = "Meu filho cresceu???"
-        postContent.text = """
-        Meu filho tem apenas 6 anos de idade e ja tirou sua carteira
-        de motorista e ja financiou um carro. O que eu faco????
-        """
+    func configure(userImage: String, userName: String, postTitle: String, postContent: String, communityName: String) {
+        self.userImage.image = UIImage(named: userImage)
+        self.userName.text = userName
+        self.postTitle.text = postTitle
+        self.postContent.text = postContent
+        self.tagPost.text = communityName
     }
 
     private func setupXib() {
