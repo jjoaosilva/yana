@@ -34,13 +34,13 @@ class CommunityProfileTableViewCell: UITableViewCell {
         imageUser.layer.masksToBounds = true
         imageUser.layer.cornerRadius = self.imageUser.bounds.width / 2
 
-        userName.textColor = .primaryColor
-        titlePost.textColor = .primaryColor
+        userName.textColor = .defaultBlack
+        titlePost.textColor = .defaultBlack
 
         postContent.adjustsFontForContentSizeCategory = true
         postContent.allowsEditingTextAttributes = false
         postContent.isEditable = false
-        postContent.textColor = .primaryColor
+        postContent.textColor = .defaultBlack
     }
 
 }
