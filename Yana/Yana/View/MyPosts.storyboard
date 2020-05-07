@@ -15,7 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="rWr-mp-Jdc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="workInProgress" translatesAutoresizingMaskIntoConstraints="NO" id="r6S-ag-URG">
+                                <rect key="frame" x="60" y="184" width="294" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="ELt-Qc-6lt"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="294" id="SVx-dA-Ko7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funcionalidade em desenvlvimento" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egW-Mj-zEy">
+                                <rect key="frame" x="61.5" y="454" width="291" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="iG1-Pa-kmB"/>
+                                    <constraint firstAttribute="height" constant="82" id="mAb-aM-nou"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.93139725920000005" green="0.26165640350000002" blue="0.33617612720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r6S-ag-URG" firstAttribute="leading" secondItem="wVv-Ax-hQz" secondAttribute="leading" constant="60" id="2Tm-WI-oVp"/>
+                            <constraint firstItem="wVv-Ax-hQz" firstAttribute="trailing" secondItem="r6S-ag-URG" secondAttribute="trailing" constant="60" id="M1N-JN-Xgq"/>
+                            <constraint firstItem="egW-Mj-zEy" firstAttribute="top" secondItem="r6S-ag-URG" secondAttribute="bottom" constant="20" id="RNM-yX-p2R"/>
+                            <constraint firstItem="r6S-ag-URG" firstAttribute="centerX" secondItem="wVv-Ax-hQz" secondAttribute="centerX" id="RXU-6s-saq"/>
+                            <constraint firstItem="r6S-ag-URG" firstAttribute="top" secondItem="wVv-Ax-hQz" secondAttribute="top" constant="140" id="WlL-YS-r7T"/>
+                            <constraint firstItem="egW-Mj-zEy" firstAttribute="centerX" secondItem="r6S-ag-URG" secondAttribute="centerX" id="zH8-jH-B3N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wVv-Ax-hQz"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Meus Posts" image="posts_icon" selectedImage="posts_fill" id="bpN-hv-KSt">
@@ -25,11 +52,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mHv-vA-847" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="118"/>
+            <point key="canvasLocation" x="221.73913043478262" y="117.85714285714285"/>
         </scene>
     </scenes>
     <resources>
         <image name="posts_fill" width="25" height="25"/>
         <image name="posts_icon" width="25" height="25"/>
+        <image name="workInProgress" width="673" height="500"/>
     </resources>
 </document>

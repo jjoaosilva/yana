@@ -15,7 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="xj1-N9-hji">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="workInProgress" translatesAutoresizingMaskIntoConstraints="NO" id="p9y-87-vS9">
+                                <rect key="frame" x="60" y="184" width="294" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="q7i-H5-YwG"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="294" id="xQ1-iz-EZW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funcionalidade em desenvlvimento" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypj-6W-D2k">
+                                <rect key="frame" x="61.5" y="454" width="291" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="cRA-sk-B0u"/>
+                                    <constraint firstAttribute="width" constant="291" id="li4-QL-YYn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.93139725920000005" green="0.26165640350000002" blue="0.33617612720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p9y-87-vS9" firstAttribute="centerX" secondItem="MrF-4B-BZh" secondAttribute="centerX" id="Dg6-ha-cbd"/>
+                            <constraint firstItem="ypj-6W-D2k" firstAttribute="top" secondItem="p9y-87-vS9" secondAttribute="bottom" constant="20" id="YNR-Sf-PKS"/>
+                            <constraint firstItem="ypj-6W-D2k" firstAttribute="centerX" secondItem="p9y-87-vS9" secondAttribute="centerX" id="ajw-X8-pzM"/>
+                            <constraint firstItem="MrF-4B-BZh" firstAttribute="trailing" secondItem="p9y-87-vS9" secondAttribute="trailing" constant="60" id="bQM-RX-WvE"/>
+                            <constraint firstItem="p9y-87-vS9" firstAttribute="leading" secondItem="MrF-4B-BZh" secondAttribute="leading" constant="60" id="gOA-Of-q8i"/>
+                            <constraint firstItem="p9y-87-vS9" firstAttribute="top" secondItem="MrF-4B-BZh" secondAttribute="top" constant="140" id="rs2-cZ-Nts"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MrF-4B-BZh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="notification_icon" selectedImage="notification_fill" id="RgL-q2-eAs">
@@ -31,5 +58,6 @@
     <resources>
         <image name="notification_fill" width="25" height="25"/>
         <image name="notification_icon" width="25" height="25"/>
+        <image name="workInProgress" width="673" height="500"/>
     </resources>
 </document>
