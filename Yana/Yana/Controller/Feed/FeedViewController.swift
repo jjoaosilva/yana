@@ -74,6 +74,7 @@ class FeedViewController: UIViewController {
                 fatalError("Unexpected Segue Destination; \(String(describing: segue.destination))")
             }
             communityViewController.infocommunity = communityData
+            communityViewController.communityID = communityData.first?.communityID
 
         case "viewPost":
             print("viewPost")
