@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewPostHeaderTable" customModule="Yana" customModuleProvider="target">
+            <connections>
+                <outlet property="commentPost" destination="IRc-nm-Dbb" id="rlK-pc-ZxE"/>
+                <outlet property="labelView" destination="Q9n-UP-pYy" id="hh2-3w-PWu"/>
+                <outlet property="managePost" destination="oBc-54-pkS" id="B7P-Pp-VAf"/>
+                <outlet property="postContent" destination="jcg-6x-nVR" id="Qtc-wL-6lR"/>
+                <outlet property="postTitle" destination="pIe-9M-FbD" id="2yv-S1-FAW"/>
+                <outlet property="savePost" destination="zhU-FB-kCf" id="BSC-BV-1So"/>
+                <outlet property="tagPost" destination="Rem-SY-yF1" id="5iV-rF-vdm"/>
+                <outlet property="userImage" destination="W9t-GX-L8n" id="Ttq-2Q-naf"/>
+                <outlet property="userName" destination="XEF-Q8-vMa" id="Puk-i2-e8L"/>
+                <outlet property="utilPost" destination="C9m-KM-JKw" id="DQ7-3D-l73"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W9t-GX-L8n">
+                    <rect key="frame" x="20" y="10" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.39065405730000002" blue="0.20865741369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="8Ye-Bm-IXS"/>
+                        <constraint firstAttribute="height" constant="40" id="g9k-Rm-fFa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEF-Q8-vMa">
+                    <rect key="frame" x="70" y="23" width="96.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo da Postagem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIe-9M-FbD">
+                    <rect key="frame" x="20" y="60" width="364" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-6x-nVR">
+                    <rect key="frame" x="20" y="92" width="364" height="47"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed aliquam diam, id porttitor tortor. Integer eu arcu non tortor…</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9m-KM-JKw">
+                    <rect key="frame" x="20" y="170" width="25" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="hand_icon">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="utilButtonTapped:" destination="-1" eventType="touchUpInside" id="OfP-qa-Kkp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-nm-Dbb">
+                    <rect key="frame" x="55" y="170" width="25" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="pencilPrimaryColor">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhU-FB-kCf">
+                    <rect key="frame" x="369" y="170" width="25" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="stack_icon">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="jB4-ai-Dy6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBc-54-pkS">
+                    <rect key="frame" x="369" y="17.5" width="25" height="25"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="ellipisesPrimaryColor">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="managePostTapped:" destination="-1" eventType="touchUpInside" id="gif-3f-mye"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9n-UP-pYy">
+                    <rect key="frame" x="20" y="144" width="37.5" height="16"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-SY-yF1">
+                            <rect key="frame" x="10" y="2" width="17.5" height="12"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="OJi-7L-hc1"/>
+                        <constraint firstAttribute="bottom" secondItem="Rem-SY-yF1" secondAttribute="bottom" constant="2" id="a57-fD-3fQ"/>
+                        <constraint firstItem="Rem-SY-yF1" firstAttribute="leading" secondItem="Q9n-UP-pYy" secondAttribute="leading" constant="10" id="rlN-Zv-3WC"/>
+                        <constraint firstAttribute="trailing" secondItem="Rem-SY-yF1" secondAttribute="trailing" constant="10" id="tlp-qT-ptX"/>
+                        <constraint firstItem="Rem-SY-yF1" firstAttribute="top" secondItem="Q9n-UP-pYy" secondAttribute="top" constant="2" id="y8J-hf-Cg0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="jcg-6x-nVR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="0oh-UC-JBd"/>
+                <constraint firstItem="pIe-9M-FbD" firstAttribute="top" secondItem="W9t-GX-L8n" secondAttribute="bottom" constant="10" id="40F-fu-kRS"/>
+                <constraint firstItem="Q9n-UP-pYy" firstAttribute="trailing" secondItem="jcg-6x-nVR" secondAttribute="trailing" priority="250" id="5lM-Tm-aWu"/>
+                <constraint firstItem="jcg-6x-nVR" firstAttribute="top" secondItem="pIe-9M-FbD" secondAttribute="bottom" constant="5" id="6tk-7O-UZ9"/>
+                <constraint firstItem="Q9n-UP-pYy" firstAttribute="leading" secondItem="jcg-6x-nVR" secondAttribute="leading" id="9tL-qM-dqS"/>
+                <constraint firstItem="XEF-Q8-vMa" firstAttribute="centerY" secondItem="W9t-GX-L8n" secondAttribute="centerY" id="AT3-U6-a7x"/>
+                <constraint firstAttribute="trailing" secondItem="jcg-6x-nVR" secondAttribute="trailing" constant="30" id="AiF-m7-UT5"/>
+                <constraint firstAttribute="trailing" secondItem="oBc-54-pkS" secondAttribute="trailing" constant="20" id="Ds4-Sv-yJ7"/>
+                <constraint firstItem="IRc-nm-Dbb" firstAttribute="centerY" secondItem="C9m-KM-JKw" secondAttribute="centerY" id="Fve-fR-O4R"/>
+                <constraint firstItem="XEF-Q8-vMa" firstAttribute="leading" secondItem="W9t-GX-L8n" secondAttribute="trailing" constant="10" id="GZU-Cw-Sgu"/>
+                <constraint firstItem="pIe-9M-FbD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Gaz-gp-4Al"/>
+                <constraint firstItem="IRc-nm-Dbb" firstAttribute="leading" secondItem="C9m-KM-JKw" secondAttribute="trailing" constant="10" id="OHo-cd-MvG"/>
+                <constraint firstItem="C9m-KM-JKw" firstAttribute="top" secondItem="Q9n-UP-pYy" secondAttribute="bottom" constant="10" id="Qfh-uJ-f4L"/>
+                <constraint firstItem="Q9n-UP-pYy" firstAttribute="top" secondItem="jcg-6x-nVR" secondAttribute="bottom" constant="5" id="UG9-hf-I92"/>
+                <constraint firstItem="zhU-FB-kCf" firstAttribute="leading" secondItem="oBc-54-pkS" secondAttribute="leading" id="a5A-Cd-ukw"/>
+                <constraint firstAttribute="trailing" secondItem="pIe-9M-FbD" secondAttribute="trailing" constant="30" id="c39-oY-fmt"/>
+                <constraint firstItem="oBc-54-pkS" firstAttribute="centerY" secondItem="XEF-Q8-vMa" secondAttribute="centerY" id="gUf-Z2-nuy"/>
+                <constraint firstItem="W9t-GX-L8n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="tcY-a6-mkl"/>
+                <constraint firstItem="C9m-KM-JKw" firstAttribute="leading" secondItem="Q9n-UP-pYy" secondAttribute="leading" id="xb8-p1-foV"/>
+                <constraint firstItem="zhU-FB-kCf" firstAttribute="centerY" secondItem="IRc-nm-Dbb" secondAttribute="centerY" id="yOF-Ec-d58"/>
+                <constraint firstItem="W9t-GX-L8n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="zIl-1R-XUK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="149" y="101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ellipisesPrimaryColor" width="25" height="25"/>
+        <image name="hand_icon" width="25" height="25"/>
+        <image name="pencilPrimaryColor" width="25" height="25"/>
+        <image name="stack_icon" width="25" height="25"/>
+    </resources>
+</document>

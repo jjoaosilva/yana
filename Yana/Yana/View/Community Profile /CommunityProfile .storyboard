@@ -15,6 +15,16 @@
             </objects>
             <point key="canvasLocation" x="530" y="-1112"/>
         </scene>
+        <!--ViewPost-->
+        <scene sceneID="GVi-dc-yL5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ViewPost" id="MYs-Ev-utL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="l9n-oC-IVK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcQ-vD-bvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="-811"/>
+        </scene>
         <!--Community Profile Table View Controller-->
         <scene sceneID="5MU-1h-dXH">
             <objects>
@@ -131,7 +141,7 @@
                                                     <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed aliquam diam, id porttitor tortor. Integer eu arcu non tortor...</string>
                                                     <attributes>
                                                         <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <font key="NSFont" metaFont="system"/>
+                                                        <font key="NSFont" metaFont="label" size="13"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -157,6 +167,7 @@
                                     <outlet property="postContent" destination="Ejg-9D-3g3" id="Jit-Dr-7Fx"/>
                                     <outlet property="titlePost" destination="4Nd-2a-OfD" id="WJC-gX-ctr"/>
                                     <outlet property="userName" destination="xIW-xb-qaL" id="jbk-CF-L46"/>
+                                    <segue destination="MYs-Ev-utL" kind="show" identifier="viewPost" id="cuV-ow-eVl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

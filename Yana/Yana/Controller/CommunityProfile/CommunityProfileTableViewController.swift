@@ -75,26 +75,29 @@ class CommunityProfileTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
     
-//        switch (segue.identifier ?? "") {
-//        case "viewPost":
-//            //Obtem o viewcontroller de destino
-//            let postDetailViewController = segue.destination as? ViewPostTable
-//            //Obtem a celula selecionada
-//            let selectedPostCell = sender as? CommunityProfileTableViewCell
-//            //Obtem o caminho do indice da celula selecionadax
-//            let indexPath = tableView.indexPath(for: selectedPostCell)
-//            //Procura esse caminho no array de objetos de meals
-//            let selectedPost = infocommunity[indexPath.row]
-//            //Exibicao de destino
-//            postDetailViewController.post = selectedPost
-//        }
+        switch (segue.identifier ?? "") {
+        case "viewPost":
+            //Obtem o viewcontroller de destino
+            let postDetailViewController = segue.destination as? ViewPostTable
+            //Obtem a celula selecionada
+            guard let selectedPostCell = sender as? CommunityProfileTableViewCell else {  fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+}
+            //Obtem o caminho do indice da celula selecionadax
+            let indexPath = tableView.indexPath(for: selectedPostCell)
+            //Procura esse caminho no array de objetos de meals
+            let selectedPost = infocommunity[indexPath!.row]
+            //Exibicao de destino
+            postDetailViewController!.post = selectedPost
+        default:
+            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+        }
     }
 
     // MARK: - Private functions
 
     private func layoutSettings() {
         viewTable.backgroundColor = .defaultWhite
-        tableView.allowsSelection = false
+//        tableView.allowsSelection = false
 
         tagCommunity.textColor = .primaryColor
         tagCommunity.font = .bellotaTitle
