@@ -141,7 +141,7 @@
                                                     <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed aliquam diam, id porttitor tortor. Integer eu arcu non tortor...</string>
                                                     <attributes>
                                                         <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <font key="NSFont" metaFont="label" size="13"/>
+                                                        <font key="NSFont" metaFont="system"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>

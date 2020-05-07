@@ -26,7 +26,7 @@ class CommunityProfileTableViewController: UITableViewController {
         super.viewDidLoad()
         layoutSettings()
         //tabBarController?.tabBar.isHidden = true
-        infocommunity = manager.getAllActivitiesCommunity(identifier: 1)
+//        infocommunity = manager.getAllActivitiesCommunity(identifier: 1)
 
         //setInformationsCommunity()
     }
@@ -71,10 +71,10 @@ class CommunityProfileTableViewController: UITableViewController {
 //        tagCommunity.text = community.communityName
 //        peopleTalkLabel.text = "\(community.numberFollowers) pessoas falando sobre isso"
 //    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
-    
+
         switch (segue.identifier ?? "") {
         case "viewPost":
             //Obtem o viewcontroller de destino
