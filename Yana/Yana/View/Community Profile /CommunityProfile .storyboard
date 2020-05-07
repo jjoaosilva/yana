@@ -48,7 +48,7 @@
                                                 <constraint firstAttribute="width" constant="105" id="Uhi-nZ-lFN"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvd-Kk-thO">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yvd-Kk-thO">
                                             <rect key="frame" x="44.666666666666664" y="118.99999999999999" width="79.666666666666686" height="44.333333333333329"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="37"/>
                                             <nil key="textColor"/>
@@ -122,7 +122,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nd-2a-OfD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Nd-2a-OfD">
                                                     <rect key="frame" x="0.0" y="22" width="35.333333333333336" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="9YV-HL-1xQ"/>
@@ -179,7 +179,7 @@
                     <navigationItem key="navigationItem" id="6Gm-ir-keQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DpF-Sc-z36">
                             <connections>
-                                <segue destination="VMx-Z8-wRb" kind="presentation" id="c5c-oo-vfq"/>
+                                <segue destination="VMx-Z8-wRb" kind="presentation" identifier="makePost" id="c5c-oo-vfq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

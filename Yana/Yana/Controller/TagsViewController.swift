@@ -41,24 +41,27 @@ class TagsViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let community: [PostPackage]
-
-        switch segue.identifier ?? "" {
-        case "firstButton":
-            community = dataManager.getAllActivitiesCommunity(identifier: 1)
-        case "secondButton":
-            community = dataManager.getAllActivitiesCommunity(identifier: 2)
-        case "thirdButton":
-            community = dataManager.getAllActivitiesCommunity(identifier: 3)
-        case "fourthButton":
-            community = dataManager.getAllActivitiesCommunity(identifier: 4)
-        default:
-            community = dataManager.getAllActivitiesCommunity(identifier: 1)
-        }
-
+        
         guard let communityProfile = segue.destination as? CommunityProfileTableViewController else {
             fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
         }
 
+        switch segue.identifier ?? "" {
+        case "firstButton":
+            community = dataManager.getAllActivitiesCommunity(identifier: 1)
+            communityProfile.communityID = 1
+        case "secondButton":
+            community = dataManager.getAllActivitiesCommunity(identifier: 2)
+            communityProfile.communityID = 2
+        case "thirdButton":
+            community = dataManager.getAllActivitiesCommunity(identifier: 3)
+            communityProfile.communityID = 3
+        case "fourthButton":
+            community = dataManager.getAllActivitiesCommunity(identifier: 4)
+            communityProfile.communityID = 4
+        default:
+            community = dataManager.getAllActivitiesCommunity(identifier: 1)
+        }
         communityProfile.infocommunity = community
     }
 

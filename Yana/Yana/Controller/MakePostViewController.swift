@@ -23,6 +23,11 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var plusMediaLabel: UILabel!
     @IBOutlet weak var postContent: UITextView!
     @IBOutlet weak var titlePage: UINavigationItem!
+    @IBOutlet weak var communityName: UIButton!
+    static let manager = DataManager()
+    var currentUser: Person = manager.getUsers().first!
+    var post: Post?
+    var community: String?
 
     // MARK: - Initializations
 
@@ -71,7 +76,12 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func doneBarButton(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
+//        post?.title = postTitle.text ?? ""
+//        post?.description = postContent.text
+//        post?.personID = person!.personID
+//        post?.communityID = person!.communityID
+//        post?.useful = 20
+//        post?.status = true
     }
 
     // MARK: - Navigation
@@ -80,7 +90,7 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
 
-    //MARK: UITextFieldDelegate
+    // MARK: UITextFieldDelegate
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
         //Desativa o botao save enquanto essa opcao esta ativa
@@ -105,18 +115,27 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
         view.backgroundColor = .defaultWhite
 
         nameUser.textColor = .primaryColor
+        nameUser.text = currentUser.userName
 
         plusMediaLabel.textColor = .primaryColor
         plusMediaButton.tintColor = .primaryColor
         plusCommunityLabel.textColor = .primaryColor
         plusCommunityButton.tintColor = .primaryColor
 
+        communityName.setTitle(community, for: .normal)
+        communityName.tintColor = .defaultWhite
+        communityName.backgroundColor = .primaryColor
+        communityName.layer.cornerRadius = 10
+
         imageUser.tintColor = .primaryColor
+        imageUser.image = UIImage(named: currentUser.imageNameProfile)
+        imageUser.layer.masksToBounds = true
+        imageUser.layer.cornerRadius = imageUser.bounds.width / 2
 
         cancelButtonBar.tintColor = .primaryColor
         doneButtonBar.tintColor = .primaryColor
         navigationItem.title = "Post"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.primaryColor]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.primaryColor]
 
         postTitle.backgroundColor = .defaultWhite
         postTitle.borderColor = .primaryColor
@@ -129,9 +148,6 @@ class MakePostViewController: UIViewController, UITextFieldDelegate {
         postContent.layer.borderWidth = 1
         postContent.layer.cornerRadius = 10
         postContent.textColor = .primaryColor
-
-        imageUser.layer.masksToBounds = true
-        imageUser.layer.cornerRadius = imageUser.bounds.width / 2
     }
 
     private func updateSaveButtonState() {
