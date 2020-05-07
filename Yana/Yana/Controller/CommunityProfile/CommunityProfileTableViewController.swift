@@ -71,23 +71,36 @@ class CommunityProfileTableViewController: UITableViewController {
 //        tagCommunity.text = community.communityName
 //        peopleTalkLabel.text = "\(community.numberFollowers) pessoas falando sobre isso"
 //    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
-    
+
         switch (segue.identifier ?? "") {
+        case "makePost":
+            guard let navigation = segue.destination as? UINavigationController else {                fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            }
+            //Obtem o viewcontroller de destino
+            guard let makePostViewController = navigation.topViewController as? MakePostViewController else {
+                fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            }
+            makePostViewController.person = infocommunity[1]
         case "viewPost":
             //Obtem o viewcontroller de destino
-            let postDetailViewController = segue.destination as? ViewPostTable
+            guard let postDetailViewController = segue.destination as? ViewPostTable else {
+                fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            }
             //Obtem a celula selecionada
-            guard let selectedPostCell = sender as? CommunityProfileTableViewCell else {  fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
-}
+            guard let selectedPostCell = sender as? CommunityProfileTableViewCell else {
+                fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            }
             //Obtem o caminho do indice da celula selecionadax
-            let indexPath = tableView.indexPath(for: selectedPostCell)
+            guard let indexPath = tableView.indexPath(for: selectedPostCell) else {
+                fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            }
             //Procura esse caminho no array de objetos de meals
-            let selectedPost = infocommunity[indexPath!.row]
+            let selectedPost = infocommunity[indexPath.row]
             //Exibicao de destino
-            postDetailViewController!.post = selectedPost
+            postDetailViewController.post = selectedPost
         default:
             fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
         }

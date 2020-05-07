@@ -179,7 +179,7 @@
                     <navigationItem key="navigationItem" id="6Gm-ir-keQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DpF-Sc-z36">
                             <connections>
-                                <segue destination="VMx-Z8-wRb" kind="presentation" id="c5c-oo-vfq"/>
+                                <segue destination="VMx-Z8-wRb" kind="presentation" identifier="makePost" id="c5c-oo-vfq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -22,7 +22,6 @@ class ViewPostTable: UIViewController {
         createComments()
         configureHeaderTable()
         configureTable()
-        print(post)
     }
 
     private func configureHeaderTable() {
