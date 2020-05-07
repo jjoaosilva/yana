@@ -52,7 +52,7 @@
         <scene sceneID="0iE-Jf-NHd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nI8-hM-quq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tags" image="tag.fill" catalog="system" id="kyq-V9-Lam">
+                    <tabBarItem key="tabBarItem" title="Tags" image="tag_icon" selectedImage="tag_fill" id="kyq-V9-Lam">
                         <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -71,6 +71,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tag.fill" catalog="system" width="128" height="116"/>
+        <image name="tag_fill" width="25" height="25"/>
+        <image name="tag_icon" width="25" height="25"/>
     </resources>
 </document>

@@ -18,7 +18,7 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MrF-4B-BZh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notifications" image="bell.fill" catalog="system" id="RgL-q2-eAs">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notification_icon" selectedImage="notification_fill" id="RgL-q2-eAs">
                         <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -29,6 +29,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell.fill" catalog="system" width="128" height="124"/>
+        <image name="notification_fill" width="25" height="25"/>
+        <image name="notification_icon" width="25" height="25"/>
     </resources>
 </document>
