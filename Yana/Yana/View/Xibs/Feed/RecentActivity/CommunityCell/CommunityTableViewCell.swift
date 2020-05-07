@@ -14,6 +14,9 @@ class CommunityTableViewCell: UITableViewCell {
 
     static let dataManager: DataManager = DataManager()
     var posts: [PostPackage] = []
+    var community: Community?
+
+    weak var delegate: FeedViewController?
 
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var picture: UIImageView!
@@ -39,6 +42,11 @@ class CommunityTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        let tap = UITapGestureRecognizer(target: self, action: #selector(click))
+        self.tagName.addGestureRecognizer(tap)
+
+        self.tagName.isUserInteractionEnabled = true
+
         self.recentPosts.delegate = self
         self.recentPosts.dataSource = self
 
@@ -50,12 +58,19 @@ class CommunityTableViewCell: UITableViewCell {
                 forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
     }
 
+    @objc private func click() {
+        if let del = delegate {
+            del.goToCommunity(identifier: community!.communityID)
+        }
+    }
+
     public func currentCommunity(value: Int) {
         let lastPosts = CommunityTableViewCell.dataManager.getAllActivitiesCommunity(identifier: value)
         posts.append(contentsOf: lastPosts)
     }
 
     public func configure(community: Community) {
+        self.community = community
         self.tagName.text = "#\(community.communityName)"
         self.tagName.font = .bellotaTag
 
@@ -85,6 +100,7 @@ extension CommunityTableViewCell: UICollectionViewDelegate, UICollectionViewData
 
         let post = posts[indexPath.row]
         cell.configure(post: post)
+        cell.delegate = self.delegate
         return cell
     }
 

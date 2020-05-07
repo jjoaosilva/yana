@@ -9,9 +9,11 @@
 import UIKit
 
 class PostCollectionViewCell: UICollectionViewCell {
-
     static let nibName = "PostCollectionViewCell"
     static let identifier = "postCell"
+
+    var post: PostPackage?
+    weak var delegate: FeedViewController?
 
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var picture: UIImageView!
@@ -37,7 +39,14 @@ class PostCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let del = delegate {
+            del.goToPost(data: post!)
+        }
+    }
+
     public func configure(post: PostPackage) {
+        self.post = post
         self.username.text = post.authorName
         self.postTitle.text = post.title
         self.picture.image = UIImage(named: post.authorImageName)
@@ -47,6 +56,6 @@ class PostCollectionViewCell: UICollectionViewCell {
         self.username.text = ""
         self.postTitle.text = ""
         self.picture.image = nil
+        self.post = nil
     }
-
 }

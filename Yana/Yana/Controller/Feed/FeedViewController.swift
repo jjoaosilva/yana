@@ -16,6 +16,9 @@ class FeedViewController: UIViewController {
     var currentUser: Person = dataManager.getUsers().first!
     var communities: [Community] = dataManager.getCommunities()
 
+    var communityData: [PostPackage] = []
+    var postData: PostPackage?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutSettings()
@@ -50,6 +53,39 @@ class FeedViewController: UIViewController {
             sectionNib,
             forHeaderFooterViewReuseIdentifier: RecentActivitySectionHeader.identifier)
     }
+
+    func goToCommunity(identifier: Int) {
+        communityData = FeedViewController.dataManager.getAllActivitiesCommunity(identifier: identifier)
+        performSegue(withIdentifier: "communityProfile", sender: nil)
+    }
+
+    func goToPost(data: PostPackage) {
+        postData = data
+        performSegue(withIdentifier: "viewPost", sender: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let identifier = segue.identifier else { return }
+
+        switch identifier {
+        case "communityProfile":
+            guard let communityViewController = segue.destination as? CommunityProfileTableViewController else {
+                fatalError("Unexpected Segue Destination; \(String(describing: segue.destination))")
+            }
+            communityViewController.infocommunity = communityData
+            communityViewController.communityID = communityData.first?.communityID
+
+        case "viewPost":
+            print("viewPost")
+            guard let postViewController = segue.destination as? ViewPostTable else {
+                fatalError("Unexpected Segue Destination; \(String(describing: segue.destination))")
+            }
+            postViewController.post = postData
+        default:
+            fatalError("Unexpected Segue Identifier: \(String(describing: segue.identifier))  and Destination: \(String(describing: segue.destination));")
+        }
+    }
 }
 
 extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
@@ -77,6 +113,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
         }
 
         cell.configure(community: communities[indexPath.row])
+        cell.delegate = self
         return cell
     }
 }

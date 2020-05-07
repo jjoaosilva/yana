@@ -31,21 +31,13 @@ class TagsViewController: UIViewController {
         configure()
     }
 
-    @IBAction func firstButtonTapped(_ sender: UIButton) {
-        print("1")
-    }
+    @IBAction func firstButtonTapped(_ sender: UIButton) {}
 
-    @IBAction func secondButtonTapped(_ sender: UIButton) {
-        print("2")
-    }
+    @IBAction func secondButtonTapped(_ sender: UIButton) {}
 
-    @IBAction func thirdButtonTapped(_ sender: UIButton) {
-        print("3")
-    }
+    @IBAction func thirdButtonTapped(_ sender: UIButton) {}
 
-    @IBAction func fourthButtonTapped(_ sender: UIButton) {
-        print("4")
-    }
+    @IBAction func fourthButtonTapped(_ sender: UIButton) {}
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let community: [PostPackage]
