@@ -18,10 +18,17 @@ class CommunityProfileTableViewController: UITableViewController {
     @IBOutlet weak var searchField: FormTextField!
     @IBOutlet weak var viewTable: UIView!
 
+    let manager = DataManager()
+    var infocommunity = [PostPackage]()
+    var community: Community?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutSettings()
         //tabBarController?.tabBar.isHidden = true
+        infocommunity = manager.getAllActivitiesCommunity(identifier: 1)
+
+        //setInformationsCommunity()
     }
 
     // MARK: - Table view data source
@@ -31,7 +38,7 @@ class CommunityProfileTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return infocommunity.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,8 +50,11 @@ class CommunityProfileTableViewController: UITableViewController {
             CommunityProfileTableViewCell else {
             fatalError("The dequeued cell is not an instance of MealTableViewCell.")
         }
-        // injetar os dados do dataSource nas celulas
-        // cell.dataItem = items[indexPath.row]
+
+        cell.postContent.text = infocommunity[indexPath.row].description
+        cell.imageUser.image = UIImage(named: infocommunity[indexPath.row].authorImageName)
+        cell.userName.text = infocommunity[indexPath.row].authorName
+        cell.titlePost.text = infocommunity[indexPath.row].title
 
         return cell
     }
@@ -55,6 +65,30 @@ class CommunityProfileTableViewController: UITableViewController {
 //        return view
 //
 //    }
+//
+//    func setInformationsCommunity() {
+//        imageCommunity.image = UIImage(named: community.imageNameBackground)
+//        tagCommunity.text = community.communityName
+//        peopleTalkLabel.text = "\(community.numberFollowers) pessoas falando sobre isso"
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
+    
+//        switch (segue.identifier ?? "") {
+//        case "viewPost":
+//            //Obtem o viewcontroller de destino
+//            let postDetailViewController = segue.destination as? ViewPostTable
+//            //Obtem a celula selecionada
+//            let selectedPostCell = sender as? CommunityProfileTableViewCell
+//            //Obtem o caminho do indice da celula selecionadax
+//            let indexPath = tableView.indexPath(for: selectedPostCell)
+//            //Procura esse caminho no array de objetos de meals
+//            let selectedPost = infocommunity[indexPath.row]
+//            //Exibicao de destino
+//            postDetailViewController.post = selectedPost
+//        }
+    }
 
     // MARK: - Private functions
 
@@ -71,13 +105,20 @@ class CommunityProfileTableViewController: UITableViewController {
         plusPostButton.tintColor = .primaryColor
         self.navigationController?.navigationBar.tintColor = .primaryColor
 
+        searchField.textColor = .primaryColor
+        searchField.tintColor = .primaryColor
+        searchField.paddingLeft = CGFloat(15)
+        searchField.placeholder = "Pesquisar"
+        searchField.placeholderColor = .primaryColor
         searchField.backgroundColor = .defaultWhite
         searchField.layer.borderColor = UIColor.primaryColor.cgColor
-        searchField.layer.borderWidth = 1
+        searchField.layer.borderWidth = 2
         searchField.layer.cornerRadius = 10
 
         if #available(iOS 13.0, *) {
             optionsChoise.selectedSegmentTintColor = .primaryColor
+        } else {
+            optionsChoise.tintColor = .primaryColor
         }
         optionsChoise.backgroundColor = .secondaryColor
 

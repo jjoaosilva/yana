@@ -12,10 +12,27 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
 
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        let launcheBefore = UserDefaults.standard.bool(forKey: "hasLaunched")
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let launchStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let loginStoryboard = UIStoryboard(name: "Login", bundle: nil)
+
+        if launcheBefore {
+            window?.rootViewController = loginStoryboard.instantiateInitialViewController()!
+        } else {
+            //OnboardingViewControllerID
+            window?.rootViewController = launchStoryboard.instantiateInitialViewController()!
+        }
+
+        if #available(iOS 13, *), launcheBefore != true {
+            UserDefaults.standard.set(false, forKey: "hasLaunched")
+        } else {
+            UserDefaults.standard.set(true, forKey: "hasLaunched")
+        }
+        window?.makeKeyAndVisible()
         return true
     }
 
@@ -27,4 +44,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 }
-

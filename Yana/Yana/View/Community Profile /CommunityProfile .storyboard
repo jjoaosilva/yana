@@ -96,56 +96,57 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ftr-YJ-ca6">
-                                            <rect key="frame" x="20" y="10" width="70" height="70"/>
+                                            <rect key="frame" x="20" y="10" width="50" height="50"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="70" id="GN7-Hg-0tb"/>
+                                                <constraint firstAttribute="width" constant="50" id="GN7-Hg-0tb"/>
                                                 <constraint firstAttribute="width" secondItem="Ftr-YJ-ca6" secondAttribute="height" multiplier="1:1" id="zPi-BB-IcL"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="tQK-BX-N29">
-                                            <rect key="frame" x="110" y="11" width="284" height="107"/>
+                                            <rect key="frame" x="90" y="11" width="304" height="39"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIW-xb-qaL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="18"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="19"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nd-2a-OfD">
-                                                    <rect key="frame" x="0.0" y="21" width="35.333333333333336" height="17"/>
+                                                    <rect key="frame" x="0.0" y="22" width="35.333333333333336" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="9YV-HL-1xQ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejg-9D-3g3">
-                                                    <rect key="frame" x="0.0" y="41" width="271" height="66"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="66" id="yt3-JV-7S8"/>
-                                                    </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment>
-                                                            <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed aliquam diam, id porttitor tortor. Integer eu arcu non tortor...</string>
-                                                            <attributes>
-                                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <font key="NSFont" metaFont="system"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
-                                                </textView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="4Nd-2a-OfD" firstAttribute="top" secondItem="xIW-xb-qaL" secondAttribute="bottom" constant="8" id="Krl-YY-atj"/>
-                                            </constraints>
                                         </stackView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejg-9D-3g3">
+                                            <rect key="frame" x="20" y="62.333333333333343" width="374" height="62.666666666666657"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed aliquam diam, id porttitor tortor. Integer eu arcu non tortor...</string>
+                                                    <attributes>
+                                                        <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" metaFont="system"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                        </textView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Ftr-YJ-ca6" firstAttribute="leading" secondItem="P94-CI-YgJ" secondAttribute="leading" constant="20" id="3O3-2d-Ygm"/>
                                         <constraint firstAttribute="trailing" secondItem="tQK-BX-N29" secondAttribute="trailing" constant="20" id="73s-Qc-BLz"/>
-                                        <constraint firstAttribute="bottom" secondItem="tQK-BX-N29" secondAttribute="bottom" constant="12" id="RaI-iK-0m8"/>
+                                        <constraint firstItem="Ejg-9D-3g3" firstAttribute="leading" secondItem="P94-CI-YgJ" secondAttribute="leading" constant="20" id="AZl-t8-3Pa"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ejg-9D-3g3" secondAttribute="trailing" constant="20" id="K3n-Mf-SNc"/>
+                                        <constraint firstItem="Ejg-9D-3g3" firstAttribute="top" secondItem="Ftr-YJ-ca6" secondAttribute="bottom" constant="2.3333333333333428" id="Nyw-O3-B5r"/>
+                                        <constraint firstAttribute="bottom" secondItem="tQK-BX-N29" secondAttribute="bottom" constant="80" id="RaI-iK-0m8"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ejg-9D-3g3" secondAttribute="bottom" constant="5" id="k4a-2c-WNq"/>
                                         <constraint firstItem="tQK-BX-N29" firstAttribute="top" secondItem="P94-CI-YgJ" secondAttribute="top" constant="11" id="kb6-DT-TTf"/>
                                         <constraint firstItem="tQK-BX-N29" firstAttribute="leading" secondItem="Ftr-YJ-ca6" secondAttribute="trailing" constant="20" id="o8m-l3-Gi8"/>
                                         <constraint firstItem="Ftr-YJ-ca6" firstAttribute="top" secondItem="P94-CI-YgJ" secondAttribute="top" constant="10" id="zic-2W-lXQ"/>
@@ -184,7 +185,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8c-E4-vmP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84.057971014492765" y="-823.36956521739137"/>
+            <point key="canvasLocation" x="-632" y="-824"/>
         </scene>
     </scenes>
     <resources>

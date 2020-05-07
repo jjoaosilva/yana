@@ -15,12 +15,6 @@ class CommunityProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var titlePost: UILabel!
     @IBOutlet weak var postContent: UITextView!
 
-//    var titulo: String = "Titulo" {
-//        didSet {
-//            titlePost.text = titulo
-//        }
-//    }
-
     override func awakeFromNib() {
         super.awakeFromNib()
         layoutSettings()

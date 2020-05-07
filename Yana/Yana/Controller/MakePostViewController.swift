@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MakePostViewController: UIViewController {
+class MakePostViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Propeties
 
@@ -23,15 +23,17 @@ class MakePostViewController: UIViewController {
     @IBOutlet weak var plusMediaLabel: UILabel!
     @IBOutlet weak var postContent: UITextView!
     @IBOutlet weak var titlePage: UINavigationItem!
-    
+
     // MARK: - Initializations
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        postTitle.delegate = self
         if #available(iOS 13.0, *) {
             self.isModalInPresentation = true
         }
         layoutSettings()
+        updateSaveButtonState()
 
         //On-screen keyboard configuration
         NotificationCenter.default.addObserver(self,
@@ -78,6 +80,24 @@ class MakePostViewController: UIViewController {
         view.endEditing(true)
     }
 
+    //MARK: UITextFieldDelegate
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        //Desativa o botao save enquanto essa opcao esta ativa
+        doneButtonBar.isEnabled = false
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Esconde o keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        //Verifica se o nome esta vazio
+        updateSaveButtonState()
+    }
+
     // MARK: - Methods
 
     // Adjusts the layout of the page parameters
@@ -112,5 +132,12 @@ class MakePostViewController: UIViewController {
 
         imageUser.layer.masksToBounds = true
         imageUser.layer.cornerRadius = imageUser.bounds.width / 2
+    }
+
+    private func updateSaveButtonState() {
+
+        //Desativa o botao salvar se o campo de texto estiver vazio
+        let titleText = postTitle.text ?? ""
+        doneButtonBar.isEnabled = !titleText.isEmpty
     }
 }
