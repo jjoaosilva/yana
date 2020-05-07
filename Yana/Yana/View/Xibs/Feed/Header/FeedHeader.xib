@@ -9,8 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedHeaderView" customModule="Yana" customModuleProvider="target">
             <connections>
-                <outlet property="divider" destination="eg0-OD-f4r" id="KCJ-Mp-9YU"/>
-                <outlet property="picture" destination="JCc-xb-oub" id="ywk-No-7cJ"/>
+                <outlet property="divider" destination="eg0-OD-f4r" id="Zh4-eF-cJu"/>
+                <outlet property="picture" destination="S9z-IE-df4" id="Wxn-3B-i5Q"/>
                 <outlet property="postField" destination="YEB-IB-TSJ" id="hdw-Dm-BoK"/>
             </connections>
         </placeholder>
@@ -19,16 +19,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCc-xb-oub">
-                    <rect key="frame" x="20" y="30" width="30" height="30"/>
-                    <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S9z-IE-df4">
+                    <rect key="frame" x="20" y="31" width="30" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="qps-HZ-eOJ"/>
-                        <constraint firstAttribute="width" constant="30" id="v6u-q4-Hp2"/>
+                        <constraint firstAttribute="width" constant="30" id="33v-Cu-Bdk"/>
+                        <constraint firstAttribute="height" constant="30" id="Ppr-3s-mg0"/>
                     </constraints>
-                </view>
+                </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Poste a sua dúvida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEB-IB-TSJ" customClass="FormTextField" customModule="Yana" customModuleProvider="target">
-                    <rect key="frame" x="60" y="30" width="334" height="30"/>
+                    <rect key="frame" x="60" y="31" width="334" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="r0x-qy-r9B"/>
                     </constraints>
@@ -56,24 +55,24 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-OD-f4r">
-                    <rect key="frame" x="20" y="90" width="374" height="2"/>
+                    <rect key="frame" x="20" y="91" width="374" height="1"/>
                     <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="2" id="TqV-sC-CGH"/>
+                        <constraint firstAttribute="height" constant="1" id="TqV-sC-CGH"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="S9z-IE-df4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="7FD-tQ-eD7"/>
                 <constraint firstAttribute="trailing" secondItem="eg0-OD-f4r" secondAttribute="trailing" constant="20" id="8mt-qq-tVi"/>
                 <constraint firstItem="eg0-OD-f4r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="MBD-Kd-96S"/>
-                <constraint firstItem="JCc-xb-oub" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="SoW-Ve-Krw"/>
                 <constraint firstAttribute="bottom" secondItem="eg0-OD-f4r" secondAttribute="bottom" id="TaJ-cb-ACb"/>
-                <constraint firstItem="YEB-IB-TSJ" firstAttribute="leading" secondItem="JCc-xb-oub" secondAttribute="trailing" constant="10" id="bZ0-OK-TZN"/>
+                <constraint firstItem="S9z-IE-df4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UJ0-Eo-18E"/>
+                <constraint firstItem="YEB-IB-TSJ" firstAttribute="centerY" secondItem="S9z-IE-df4" secondAttribute="centerY" id="XJg-It-C0G"/>
                 <constraint firstAttribute="trailing" secondItem="YEB-IB-TSJ" secondAttribute="trailing" constant="20" id="hQI-FG-Q2o"/>
-                <constraint firstItem="JCc-xb-oub" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="hjx-eh-jvI"/>
-                <constraint firstItem="eg0-OD-f4r" firstAttribute="top" secondItem="JCc-xb-oub" secondAttribute="bottom" constant="30" id="vgu-R6-Ixu"/>
-                <constraint firstItem="YEB-IB-TSJ" firstAttribute="centerY" secondItem="JCc-xb-oub" secondAttribute="centerY" id="yMJ-N2-ZJO"/>
+                <constraint firstItem="YEB-IB-TSJ" firstAttribute="leading" secondItem="S9z-IE-df4" secondAttribute="trailing" constant="10" id="tpj-DB-d03"/>
+                <constraint firstItem="eg0-OD-f4r" firstAttribute="top" secondItem="S9z-IE-df4" secondAttribute="bottom" constant="30" id="wdJ-zn-zx4"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

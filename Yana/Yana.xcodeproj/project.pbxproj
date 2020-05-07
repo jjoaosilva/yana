@@ -31,9 +31,6 @@
 		FE81FCDB246324230043D347 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE81FCD9246324230043D347 /* PostCollectionViewCell.xib */; };
 		FE81FCDE246344A50043D347 /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81FCDC246344A50043D347 /* CommunityTableViewCell.swift */; };
 		FE81FCDF246344A50043D347 /* CommunityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE81FCDD246344A50043D347 /* CommunityTableViewCell.xib */; };
-		FE8730CB2461DA3B000A2B83 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8730CA2461DA3B000A2B83 /* Tag.swift */; };
-		FE8730CD2461DAA2000A2B83 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8730CC2461DAA2000A2B83 /* Post.swift */; };
-		FE8730CF2461DB18000A2B83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8730CE2461DB18000A2B83 /* User.swift */; };
 		FE9BC7D92462E9EA003BCBFA /* RecentActivitySectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9BC7D82462E9EA003BCBFA /* RecentActivitySectionHeader.xib */; };
 		FE9BC7DB2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9BC7DA2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift */; };
 		FEA812132459A88800329C3B /* Bellota-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED4677C24599F8C0016AE68 /* Bellota-Bold.ttf */; };
@@ -82,9 +79,6 @@
 		FE81FCD9246324230043D347 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		FE81FCDC246344A50043D347 /* CommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableViewCell.swift; sourceTree = "<group>"; };
 		FE81FCDD246344A50043D347 /* CommunityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityTableViewCell.xib; sourceTree = "<group>"; };
-		FE8730CA2461DA3B000A2B83 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		FE8730CC2461DAA2000A2B83 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		FE8730CE2461DB18000A2B83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FE9BC7D82462E9EA003BCBFA /* RecentActivitySectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentActivitySectionHeader.xib; sourceTree = "<group>"; };
 		FE9BC7DA2462EC67003BCBFA /* RecentActivitySectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivitySectionHeaderView.swift; sourceTree = "<group>"; };
 		FEA812162459CBC700329C3B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -136,9 +130,6 @@
 				E240CA6D2460D8380055DA1A /* DataModel */,
 				E2A5DB96245B4AC50072BE09 /* OnboardingModel */,
 				9B291A0A245873D1008CA217 /* README.md */,
-				FE8730CA2461DA3B000A2B83 /* Tag.swift */,
-				FE8730CC2461DAA2000A2B83 /* Post.swift */,
-				FE8730CE2461DB18000A2B83 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -485,7 +476,6 @@
 				E2A5DB95245B4A460072BE09 /* OnboardingPageViewController.swift in Sources */,
 				7756D0422458791A00003FF1 /* MakePostViewController.swift in Sources */,
 				7756D040245877F700003FF1 /* TagsViewController.swift in Sources */,
-				FE8730CB2461DA3B000A2B83 /* Tag.swift in Sources */,
 				FED4D54C2460AEA70070861F /* FeedHeaderView.swift in Sources */,
 				E240CA712460D95E0055DA1A /* Post.swift in Sources */,
 				9BB2251C24575FB20026B831 /* Colors.swift in Sources */,
@@ -496,8 +486,6 @@
 				E240CA792461AD9F0055DA1A /* PostPackage.swift in Sources */,
 				FED467782458BE350016AE68 /* FormTextField.swift in Sources */,
 				FE81FCDE246344A50043D347 /* CommunityTableViewCell.swift in Sources */,
-				FE8730CD2461DAA2000A2B83 /* Post.swift in Sources */,
-				FE8730CF2461DB18000A2B83 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

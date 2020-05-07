@@ -20,44 +20,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-6i-1i0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Qx-fv-dWy">
                                 <rect key="frame" x="16" y="16" width="55" height="55"/>
-                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="U0h-Es-8ZP"/>
-                                    <constraint firstAttribute="width" constant="55" id="djY-tc-bkO"/>
+                                    <constraint firstAttribute="width" constant="55" id="5HP-Ql-n7F"/>
+                                    <constraint firstAttribute="height" constant="55" id="k1u-AC-mZ0"/>
                                 </constraints>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bVN-4o-flL">
-                                <rect key="frame" x="81" y="13.5" width="230" height="60.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeY-j4-54h">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui vem um título de uma postagem que pode ser grande" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uy-AI-EzH">
-                                        <rect key="frame" x="0.0" y="24.5" width="230" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="230" id="Yxb-xw-MJN"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeY-j4-54h">
+                                <rect key="frame" x="79" y="16" width="84" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui vem um título de uma postagem que pode ser grande" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uy-AI-EzH">
+                                <rect key="frame" x="79" y="40.5" width="230" height="36"/>
                                 <constraints>
-                                    <constraint firstItem="4uy-AI-EzH" firstAttribute="top" secondItem="PeY-j4-54h" secondAttribute="bottom" constant="4" id="sNi-vu-5Mx"/>
+                                    <constraint firstAttribute="width" constant="230" id="Yxb-xw-MJN"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bVN-4o-flL" firstAttribute="centerY" secondItem="gBe-6i-1i0" secondAttribute="centerY" id="2TG-34-a9B"/>
-                            <constraint firstItem="bVN-4o-flL" firstAttribute="leading" secondItem="gBe-6i-1i0" secondAttribute="trailing" constant="10" id="DrT-Yv-sMk"/>
-                            <constraint firstItem="gBe-6i-1i0" firstAttribute="leading" secondItem="THc-sN-g7l" secondAttribute="leading" constant="16" id="r5J-wo-TeL"/>
-                            <constraint firstItem="gBe-6i-1i0" firstAttribute="top" secondItem="THc-sN-g7l" secondAttribute="top" constant="16" id="udX-ea-9ed"/>
+                            <constraint firstItem="PeY-j4-54h" firstAttribute="leading" secondItem="9Qx-fv-dWy" secondAttribute="trailing" constant="8" id="0KS-bp-0eU"/>
+                            <constraint firstItem="9Qx-fv-dWy" firstAttribute="top" secondItem="THc-sN-g7l" secondAttribute="top" constant="16" id="3Tc-dn-dyd"/>
+                            <constraint firstItem="4uy-AI-EzH" firstAttribute="leading" secondItem="PeY-j4-54h" secondAttribute="leading" id="ltF-C7-3nh"/>
+                            <constraint firstItem="9Qx-fv-dWy" firstAttribute="leading" secondItem="THc-sN-g7l" secondAttribute="leading" constant="16" id="rGd-at-j16"/>
+                            <constraint firstItem="PeY-j4-54h" firstAttribute="top" secondItem="9Qx-fv-dWy" secondAttribute="top" id="tqE-Ku-nkX"/>
+                            <constraint firstItem="4uy-AI-EzH" firstAttribute="top" secondItem="PeY-j4-54h" secondAttribute="bottom" constant="4" id="zn5-Gr-bKr"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -65,7 +58,7 @@
             <size key="customSize" width="123" height="50"/>
             <connections>
                 <outlet property="container" destination="THc-sN-g7l" id="nrB-ii-jOp"/>
-                <outlet property="picture" destination="gBe-6i-1i0" id="Mbu-vP-vBA"/>
+                <outlet property="picture" destination="9Qx-fv-dWy" id="I9b-Yu-obe"/>
                 <outlet property="postTitle" destination="4uy-AI-EzH" id="Ais-b2-40I"/>
                 <outlet property="username" destination="PeY-j4-54h" id="uWr-Yg-NZh"/>
             </connections>

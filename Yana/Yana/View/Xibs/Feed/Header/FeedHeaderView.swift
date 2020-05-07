@@ -13,27 +13,9 @@ class FeedHeaderView: UIView {
     var nibName: String = "FeedHeader"
     var contentView: UIView?
 
-    @IBOutlet weak var picture: UIView!
+    @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var postField: FormTextField!
     @IBOutlet weak var divider: UIView!
-
-    private var image: UIImage? {
-        didSet {
-            if let img = image {
-                let imageView = UIImageView(image: img)
-                picture.addSubview(imageView)
-
-                picture.translatesAutoresizingMaskIntoConstraints = false
-
-                imageView.safeAreaLayoutGuide.centerYAnchor.constraint(
-                    equalTo: picture.safeAreaLayoutGuide.centerYAnchor
-                ).isActive = true
-                imageView.safeAreaLayoutGuide.centerXAnchor.constraint(
-                    equalTo: picture.safeAreaLayoutGuide.centerXAnchor
-                ).isActive = true
-            }
-        }
-    }
 
     override func draw(_ rect: CGRect) {
         picture.layer.cornerRadius = 15

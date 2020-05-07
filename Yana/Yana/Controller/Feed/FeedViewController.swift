@@ -9,22 +9,30 @@
 import UIKit
 
 class FeedViewController: UIViewController {
-
-    private let tags = Tag.getAllTags()
-
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: FeedHeaderView!
+
+    static let dataManager: DataManager = DataManager()
+    var currentUser: Person = dataManager.getUsers().first!
+    var communities: [Community] = dataManager.getCommunities()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutSettings()
         configureTable()
+        configureHeader()
     }
 
     public func layoutSettings() {
         table.backgroundColor = .defaultWhite
         table.allowsSelection = false
         table.sectionHeaderHeight = 50
+    }
+
+    public func configureHeader() {
+        header.picture.image = UIImage(
+            named: currentUser.imageNameProfile
+        )
     }
 
     private func configureTable() {
@@ -58,7 +66,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tags.count
+        return communities.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,7 +76,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
                 fatalError("(TableViewCell) Wrong Identifier")
         }
 
-        cell.configure(tag: tags[indexPath.row])
+        cell.configure(community: communities[indexPath.row])
         return cell
     }
 }
