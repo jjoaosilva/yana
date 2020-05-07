@@ -10,10 +10,14 @@ import UIKit
 
 class CommunityProfileTableViewCell: UITableViewCell {
 
+    // MARK: - Propeties
+
     @IBOutlet weak var imageUser: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var titlePost: UILabel!
     @IBOutlet weak var postContent: UITextView!
+
+    // MARK: - Initialization
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +27,8 @@ class CommunityProfileTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+
+    // MARK: - Private Methods
 
     private func layoutSettings() {
         imageUser.layer.masksToBounds = true

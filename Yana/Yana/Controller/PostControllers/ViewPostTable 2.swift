@@ -12,9 +12,8 @@ class ViewPostTable: UIViewController {
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var headerTable: ViewPostHeaderTable!
-    
     private var comments: [Comment] = [Comment]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         headerTable.configure()
@@ -51,7 +50,7 @@ extension ViewPostTable: UITableViewDataSource, UITableViewDelegate {
 
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
             let view = UIView()
             view.backgroundColor = .clear

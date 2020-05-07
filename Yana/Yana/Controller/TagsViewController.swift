@@ -49,7 +49,7 @@ class TagsViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let community: [PostPackage]
-        
+
         guard let communityProfile = segue.destination as? CommunityProfileTableViewController else {
             fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
         }
