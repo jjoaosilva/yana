@@ -10,6 +10,8 @@ import UIKit
 
 class CommunityProfileTableViewController: UITableViewController {
 
+    // MARK: - Propeties
+
     @IBOutlet weak var imageCommunity: UIImageView!
     @IBOutlet weak var tagCommunity: UILabel!
     @IBOutlet weak var peopleTalkLabel: UILabel!
@@ -21,6 +23,8 @@ class CommunityProfileTableViewController: UITableViewController {
     let manager = DataManager()
     var infocommunity = [PostPackage]()
     var communityID: Int?
+
+    // MARK: - Initialization
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,27 +60,15 @@ class CommunityProfileTableViewController: UITableViewController {
         return cell
     }
 
-//    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        let view = UIView()
-//        view.backgroundColor = .clear
-//        return view
-//
-//    }
+    // MARK: - Navigation
 
     func setInformationsCommunity() {
-        guard let id = communityID, let community = findCommunity(communityID: id) else {
+        guard let ids = communityID, let community = findCommunity(communityID: ids) else {
             fatalError("erro")
         }
         imageCommunity.image = UIImage(named: community.imageNameBackground)
         tagCommunity.text = community.communityName
         peopleTalkLabel.text = "\(community.numberFollowers) pessoas falando sobre isso"
-    }
-
-    private func findCommunity(communityID: Int) -> Community? {
-        let communities = manager.getCommunities()
-        let community = communities.filter { $0.communityID == communityID}.first
-
-        return community
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -148,5 +140,12 @@ class CommunityProfileTableViewController: UITableViewController {
 
         imageCommunity.layer.masksToBounds = true
         imageCommunity.layer.cornerRadius = imageCommunity.bounds.width / 2
+    }
+
+    private func findCommunity(communityID: Int) -> Community? {
+        let communities = manager.getCommunities()
+        let community = communities.filter { $0.communityID == communityID}.first
+
+        return community
     }
 }

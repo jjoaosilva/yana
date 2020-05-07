@@ -10,10 +10,14 @@ import UIKit
 
 class CommunityProfileTableViewCell: UITableViewCell {
 
+    // MARK: - Propeties
+
     @IBOutlet weak var imageUser: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var titlePost: UILabel!
     @IBOutlet weak var postContent: UITextView!
+
+    // MARK: - Initialization
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,17 +28,19 @@ class CommunityProfileTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
+    // MARK: - Private Methods
+
     private func layoutSettings() {
         imageUser.layer.masksToBounds = true
         imageUser.layer.cornerRadius = self.imageUser.bounds.width / 2
 
-        userName.textColor = .primaryColor
-        titlePost.textColor = .primaryColor
+        userName.textColor = .defaultBlack
+        titlePost.textColor = .defaultBlack
 
         postContent.adjustsFontForContentSizeCategory = true
         postContent.allowsEditingTextAttributes = false
         postContent.isEditable = false
-        postContent.textColor = .primaryColor
+        postContent.textColor = .defaultBlack
     }
 
 }
