@@ -18,7 +18,7 @@
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wVv-Ax-hQz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Meus Posts" image="square.grid.2x2.fill" catalog="system" id="bpN-hv-KSt">
+                    <tabBarItem key="tabBarItem" title="Meus Posts" image="posts_icon" selectedImage="posts_fill" id="bpN-hv-KSt">
                         <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -29,6 +29,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+        <image name="posts_fill" width="25" height="25"/>
+        <image name="posts_icon" width="25" height="25"/>
     </resources>
 </document>
