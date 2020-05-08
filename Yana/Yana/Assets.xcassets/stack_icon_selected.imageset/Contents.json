@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "stack_fill@24x25.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
